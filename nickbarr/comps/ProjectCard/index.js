@@ -1,8 +1,7 @@
-import styled from "styled-components";
 import React from "react";
-import Link from 'next/link';
 import ToolTag from "../ToolTag"
 import {BsCodeSlash} from 'react-icons/bs'; 
+import {MdLaunch} from 'react-icons/md'; 
 import {ProjCardCont, ProjHeading, ProjDescrip, ToolTagCont, IconCont, Icons } from "./style";
 
 
@@ -27,7 +26,7 @@ const ProjCard = ({
                     <BsCodeSlash size="2em"/>
                 </IconCont>
                 <IconCont>
-                    <BsCodeSlash size="2em"/>
+                    <MdLaunch size="2em"/>
                 </IconCont>
             </Icons>    
        </ProjCardCont> 

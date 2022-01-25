@@ -46,10 +46,6 @@ display:flex;
 justify-content:space-evenly;
 align-items:center;
 border:2px solid black;
-
-@media only screen and (max-width: 500px) {
-    flex-direction:column;
-    }
 `;
 
 
@@ -69,5 +65,10 @@ width:3em;
 height:3em;
 border-radius:50%;
 border:2px solid black;
+cursor: pointer;
+&:hover{
+    background-color:black;
+    color:white;
+}
 `;
 

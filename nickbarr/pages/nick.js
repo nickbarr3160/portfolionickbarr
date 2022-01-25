@@ -1,6 +1,9 @@
 import NavBar from '../comps/NavBar'
 import styled from 'styled-components'
 import ProjCard from '../comps/ProjectCard';
+import Button from '../comps/Button'
+import ToolStackGraphic from '../comps/ToolStackGraphic';
+import Header from '../comps/Header';
 
 const MainCont = styled.div`
 display:flex;
@@ -19,6 +22,9 @@ export default function Nick() {
     <MainCont>
         <NavBar/>
         <ProjCard/>
+        <Button/>
+        <ToolStackGraphic/>
+        <Header/>
     </MainCont>
     )
     

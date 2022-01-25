@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import React from "react";
 import Link from 'next/link';
 import {BsSunFill} from 'react-icons/bs';
