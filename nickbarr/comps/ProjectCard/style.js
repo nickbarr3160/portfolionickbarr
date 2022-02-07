@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const ProjCardCont = styled.div`
 width 80%;
-height:40%;
+height:90%;
 display:flex;
 flex-direction:column;
 justify-content:space-between;

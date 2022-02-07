@@ -1,5 +1,5 @@
 import React from "react";
-import {HeaderCont, Underline} from './style'
+import {HeaderCont, Underline} from './style';
 
 
 const Header = ({
@@ -8,6 +8,8 @@ const Header = ({
     return <HeaderCont>
         {heading}
         <Underline/>
+        
+          
     </HeaderCont>
 }
 
