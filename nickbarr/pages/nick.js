@@ -6,9 +6,13 @@ import Header from '../comps/Header';
 import HeroMessage from '../comps/HeroMessage'
 import { ProjCardData, StackData, ButtonData } from '../data/data';
 import {useRouter} from 'next/router';
-import { MainCont, ProjCardCont, ToolStackCont, HeroMessageCont, ScrollTopCont } from '../styles/styles';
+import { MainCont, ProjCardCont, ToolStackCont, HeroMessageCont, ButtonCont } from '../styles/styles';
 import ScrollButton from '../comps/ScrollToTop'
 import Button from '../comps/Button'
+import Footer from '../comps/Footer'
+import {useTheme} from '../utils/provider'
+import {BsFillMoonStarsFill } from 'react-icons/bs';
+import {FaSun} from 'react-icons/fa'
 
 //data used for component data mapping
 var cardData = ProjCardData
@@ -16,13 +20,20 @@ var stackData = StackData
 var buttonData = ButtonData
 
 export default function Nick() {
+    const {theme, setTheme} = useTheme()
     const router = useRouter();
     return (
     <MainCont>
-        <NavBar/>
+        <NavBar themeToggle={()=>setTheme(
+        theme=== 'light'?'default':'light'
+      )}
+      icon={theme==='light'?<BsFillMoonStarsFill size="1.5em"/>:<FaSun size="1.5em"/>}
+      />
+        
         <HeroMessageCont>
             <HeroMessage/>
         </HeroMessageCont>
+        
         <Header heading="PROJECTS"/>
         <ProjCardCont>
             {cardData.map((o,i)=>{
@@ -39,6 +50,7 @@ export default function Nick() {
                         })}
 
         </ProjCardCont>
+
         <Header heading="TOOL STACK"/>
         <ToolStackCont>
             {stackData.map((o,i)=>{
@@ -48,15 +60,22 @@ export default function Nick() {
                           />
                         })}
         </ToolStackCont>
+        
         <Header heading="GET IN TOUCH"/>
+       
         <ScrollButton/>
+        
+        <ButtonCont>
         {buttonData.map((o,i)=>{
                            return <Button
                            label={o.label}
                            icon={o.icon}
                            onButClick={()=>router.push(o.route)}
                           />
-                        })}
+                        })}                
+        </ButtonCont>
+        <Footer footerText='Nicholas Barr 2022'/>
+       
     </MainCont>
     )
     

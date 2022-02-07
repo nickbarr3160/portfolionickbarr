@@ -43,3 +43,10 @@ import styled from "styled-components";
     width:100%;
     justify-content:flex-end;
     `;
+
+    export const ButtonCont = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width:40%;
+    `;

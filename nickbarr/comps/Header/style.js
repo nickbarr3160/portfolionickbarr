@@ -6,7 +6,7 @@ flex-direction:column;
 justify-content:space-evenly;
 align-items:center;
 width:10em;
-height:10%;
+height:15vh;
 font-size:2em;
 `;
 
