@@ -2,17 +2,19 @@ import styled from 'styled-components'
 
 export const ButtCont = styled.button`
 background-color:black;
+width:7em;
 border: none;
 color: white;
-padding: 16px 32px;
+padding:1em;
 text-align: center;
-text-decoration: none;
-display: inline-block;
+display: flex;
+align-items:center;
+justify-content:space-evenly;
 font-size: 16px;
-margin: 4px 2px;
 transition-duration: 0.4s;
 cursor: pointer;
 border-radius:30px;
+margin:1em;
 &:hover{
     background-color: white; 
     color: black; 

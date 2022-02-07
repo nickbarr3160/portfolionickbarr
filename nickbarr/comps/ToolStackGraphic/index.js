@@ -4,7 +4,7 @@ import {MdLaunch} from 'react-icons/md';
 
 const ToolStackGraphic = ({
     toolLabel="JavaScript",
-    icon=<MdLaunch size="5em" />
+    icon="hi"
 }) => {
     return <ToolGraphicCont>
             {icon}

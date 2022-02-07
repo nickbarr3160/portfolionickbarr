@@ -6,10 +6,8 @@ const Header = ({
     heading="default heading"
 }) => {
     return <HeaderCont>
-        {heading}
+        {heading}  
         <Underline/>
-        
-          
     </HeaderCont>
 }
 

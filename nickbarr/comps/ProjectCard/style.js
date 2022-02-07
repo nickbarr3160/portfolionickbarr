@@ -3,12 +3,13 @@ import styled from 'styled-components'
 
 export const ProjCardCont = styled.div`
 width 80%;
-height:90%;
+height:40vh;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
 align-items:center;
 border: 2px solid black;
+margin:1em;
 
 `;
 export const ProjHeading = styled.div`
@@ -41,11 +42,11 @@ font-size:3vw;
 
 export const ToolTagCont = styled.div`
 width 90%;
-height:10%;
 display:flex;
 justify-content:space-evenly;
 align-items:center;
 border:2px solid black;
+flex-wrap:wrap;
 `;
 
 

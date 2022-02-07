@@ -1,48 +1,31 @@
 import NavBar from '../comps/NavBar'
 import styled from 'styled-components'
 import ProjCard from '../comps/ProjectCard';
-import Button from '../comps/Button'
 import ToolStackGraphic from '../comps/ToolStackGraphic';
 import Header from '../comps/Header';
 import HeroMessage from '../comps/HeroMessage'
-import { ProjCardData } from '../data/data';
+import { ProjCardData, StackData, ButtonData } from '../data/data';
 import {useRouter} from 'next/router';
-import heading from '../comps/Header'
-//data used for project card component mapping
-var data = ProjCardData
+import { MainCont, ProjCardCont, ToolStackCont, HeroMessageCont, ScrollTopCont } from '../styles/styles';
+import ScrollButton from '../comps/ScrollToTop'
+import Button from '../comps/Button'
 
-
-//Containers for all comps MOVE ALL TO STYLES FOLDER 
-const MainCont = styled.div`
-display:flex;
-flex-direction:column;
-width:100%;
-justify-content:space-;
-align-items:center;
-`;
-
-const ProjCardCont = styled.div`
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:space-between;
-width:100%;
-height:120vh;
-border:2px solid black;
-`;
-
+//data used for component data mapping
+var cardData = ProjCardData
+var stackData = StackData
+var buttonData = ButtonData
 
 export default function Nick() {
     const router = useRouter();
     return (
     <MainCont>
         <NavBar/>
-        
-        <HeroMessage/>
-
+        <HeroMessageCont>
+            <HeroMessage/>
+        </HeroMessageCont>
+        <Header heading="PROJECTS"/>
         <ProjCardCont>
-        <Header heading="Projects"/>
-        {data.map((o,i)=>{
+            {cardData.map((o,i)=>{
                            return <ProjCard 
                            projHeading={o.projHeading} 
                            projDescrip={o.projDescrip}
@@ -56,8 +39,24 @@ export default function Nick() {
                         })}
 
         </ProjCardCont>
-        
-        
+        <Header heading="TOOL STACK"/>
+        <ToolStackCont>
+            {stackData.map((o,i)=>{
+                           return <ToolStackGraphic 
+                           toolLabel={o.toolLabel}
+                           icon={o.toolIcon}
+                          />
+                        })}
+        </ToolStackCont>
+        <Header heading="GET IN TOUCH"/>
+        <ScrollButton/>
+        {buttonData.map((o,i)=>{
+                           return <Button
+                           label={o.label}
+                           icon={o.icon}
+                           onButClick={()=>router.push(o.route)}
+                          />
+                        })}
     </MainCont>
     )
     

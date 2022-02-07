@@ -5,8 +5,11 @@ display:flex;
 justify-content:center;
 align-items:center;
 width:100%;
-height:40%;
+
 border:2px solid black;
+@media only screen and (max-width: 600px) {
+    flex-direction:column;
+    }
 `;
 
 export const IntroMessage = styled.div`
@@ -17,7 +20,11 @@ align-items:center;
 width:50%;
 border:2px solid green;
 height:100%;
-font-size:6em;
+font-size:4em;
+
+@media only screen and (max-width: 600px) {
+    width:90%;
+}   
 `;
 
 export const IntroDescrip = styled.div`
@@ -28,5 +35,8 @@ align-items:center;
 width:50%;
 border:2px solid pink;
 height:100%;
+@media only screen and (max-width: 600px) {
+    width:90%;
+}   
 `;
 
