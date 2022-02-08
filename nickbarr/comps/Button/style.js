@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const ButtCont = styled.button`
-background-color:black;
+background-color:${props=>props.bgcolor};
 width:7em;
 border: none;
-color: white;
+color: ${props=>props.color};
 padding:1em;
 text-align: center;
 display: flex;
@@ -16,8 +16,6 @@ cursor: pointer;
 border-radius:30px;
 margin:1em;
 &:hover{
-    background-color: white; 
-    color: black; 
-    border: 2px solid black;
+    background-color: ${props=>props.hovColor}; 
 }
 `;

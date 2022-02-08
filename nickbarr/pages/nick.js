@@ -13,6 +13,7 @@ import Footer from '../comps/Footer'
 import {useTheme} from '../utils/provider'
 import {BsFillMoonStarsFill } from 'react-icons/bs';
 import {FaSun} from 'react-icons/fa'
+import { toggle_theme } from "../utils/variables";
 
 //data used for component data mapping
 var cardData = ProjCardData
@@ -24,17 +25,17 @@ export default function Nick() {
     const router = useRouter();
     return (
     <MainCont>
-        <NavBar themeToggle={()=>setTheme(
-        theme=== 'light'?'default':'light'
-      )}
-      icon={theme==='light'?<BsFillMoonStarsFill size="1.5em"/>:<FaSun size="1.5em"/>}
-      />
+        <NavBar 
+        themeToggle={()=>setTheme(
+        theme=== 'light'?'default':'light')}
+        icon={theme==='light'?<BsFillMoonStarsFill color={toggle_theme[theme].icon} size="1.5em"/>:<FaSun color={toggle_theme[theme].icon} size="1.5em"/>}
+        />
         
         <HeroMessageCont>
             <HeroMessage/>
         </HeroMessageCont>
         
-        <Header heading="PROJECTS"/>
+        <Header heading="Projects"/>
         <ProjCardCont>
             {cardData.map((o,i)=>{
                            return <ProjCard 
@@ -51,7 +52,7 @@ export default function Nick() {
 
         </ProjCardCont>
 
-        <Header heading="TOOL STACK"/>
+        <Header heading="Tool Stack"/>
         <ToolStackCont>
             {stackData.map((o,i)=>{
                            return <ToolStackGraphic 
@@ -61,7 +62,7 @@ export default function Nick() {
                         })}
         </ToolStackCont>
         
-        <Header heading="GET IN TOUCH"/>
+        <Header heading="Get in touch"/>
        
         <ScrollButton/>
         

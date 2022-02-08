@@ -6,10 +6,10 @@ width:15%;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:0.2em;
+padding:0.5em;
 border-radius:20px;
-background-color:black;
-color:white;
+background-color:${props=>props.bgcolor};
+color:${props=>props.color};
 @media only screen and (max-width: 600px) {
     font-size:0.7em;
     height:90%;

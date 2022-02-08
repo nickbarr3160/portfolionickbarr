@@ -2,24 +2,25 @@ import styled from 'styled-components'
 
 
 export const ProjCardCont = styled.div`
-width 80%;
-height:40vh;
+width 70%;
+height:50vh;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
 align-items:center;
-border: 2px solid black;
+background-color:${props=>props.bgcolor};
 margin:1em;
-
+box-shadow:0 2px 4px rgb(0 0 0/20%);;
+border-radius:1em;
+padding:1em;
 `;
 export const ProjHeading = styled.div`
 font-size:3vw;
-border:2px solid black;
+color:${props=>props.color};
 width:50%;
 display:flex;
 justify-content:center;
-
-
+text-align:center;
 // Used to adjust font size for mobile screens
 @media only screen and (max-width: 500px) {
         font-size:6vw;
@@ -28,10 +29,8 @@ justify-content:center;
 
 export const ProjDescrip = styled.div`
 width:90%;
-
 text-align:center;
-border:2px solid black;
-
+color:${props=>props.color};
 // Used to adjust font size for mobile screens
 @media only screen and (max-width: 500px) {
 height:40%;
@@ -45,7 +44,6 @@ width 90%;
 display:flex;
 justify-content:space-evenly;
 align-items:center;
-border:2px solid black;
 flex-wrap:wrap;
 `;
 
@@ -55,7 +53,9 @@ display:flex;
 align-items:center;
 justify-content:space-evenly;
 width:40%;
-border:2px solid black;
+@media only screen and (max-width: 400px) {
+    width:60%;
+}  
 `;
 
 export const IconCont = styled.div`
@@ -65,11 +65,12 @@ justify-content:center;
 width:3em;
 height:3em;
 border-radius:50%;
-border:2px solid black;
+border:2px solid ${props=>props.brdrColor};
+color:${props=>props.color};
 cursor: pointer;
 &:hover{
-    background-color:black;
-    color:white;
+    background-color: ${props=>props.bgColor};
+    color:${props=>props.hovcolor};
 }
 `;
 

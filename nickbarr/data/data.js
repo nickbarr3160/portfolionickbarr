@@ -2,7 +2,9 @@
 //Data for the HeroMessage components
 export const HeroMessageData = 
 {
-    IntroMessage:"Hey. I'm Nick Barr",
+    IntroMessage:"Hey. I'm",
+    IntroMessagefName:"Nicholas",
+    IntroMessagelName:"Barr",
     IntroDescrip:"I am a full stack developer. I enjoy writing clean code, building beautiful user interfaces, doing stuff in the terminal in my Arch Linux setup and more."
     
 }

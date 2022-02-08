@@ -22,7 +22,6 @@ import styled from "styled-components";
     align-items:center;
     justify-content:space-between;
     width:100%;
-    border:2px solid black;
     `;
     
     export const ToolStackCont = styled.div`
@@ -32,7 +31,6 @@ import styled from "styled-components";
     width:100%;
     flex-wrap:wrap;
     padding:1em;
-    border:2px solid black;
     @media only screen and (max-width: 400px) {
         flex-direction:column;
         }    
@@ -46,6 +44,7 @@ import styled from "styled-components";
 
     export const ButtonCont = styled.div`
     display:flex;
+    height:25vh;
     align-items:center;
     justify-content:space-evenly;
     width:40%;

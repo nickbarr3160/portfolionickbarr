@@ -9,5 +9,7 @@ border-radius:10px;
 justify-content:space-evenly;
 align-items:center;
 margin:1em;
+background-color:${props=>props.bgcolor};
+color:${props=>props.color};
 box-shadow:0 2px 4px rgb(0 0 0/20%);
 `;

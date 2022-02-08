@@ -6,13 +6,14 @@ flex-direction:column;
 justify-content:space-evenly;
 align-items:center;
 width:10em;
-height:15vh;
+height:25vh;
 font-size:2em;
+color:${props=>props.color};
 `;
 
 export const Underline = styled.div`
 width:50px;
 height:0.7vh;
-background-color:black;
+background-color:${props=>props.bgcolor};
 margin:0.5em;
 `;
