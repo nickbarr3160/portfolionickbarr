@@ -5,7 +5,7 @@ export const HeroMessageData =
     IntroMessage:"Hey. I'm",
     IntroMessagefName:"Nicholas",
     IntroMessagelName:"Barr",
-    IntroDescrip:"I am a full stack developer. I enjoy writing clean code, building beautiful user interfaces, doing stuff in the terminal in my Arch Linux setup and more."
+    IntroDescrip:"I am a Front-End Developer from Vancouver, British Columbia. I enjoy writing clean code, building beautiful user interfaces and providing solutions to problems in the tech space."
     
 }
 
@@ -29,7 +29,7 @@ export const ProjCardData = [
         tool2:"JavaScript",
         tool3:"Node.js",
         tool4:"CSS",
-        codeSrc:"",
+        codeSrc:"https://final-eco-how-repo.vercel.app/home",
         gitSrc:""
     },
     
@@ -51,7 +51,7 @@ import {MdLaunch} from 'react-icons/md';
 import {AiFillGithub, AiFillHtml5} from 'react-icons/ai';
 import {DiCss3} from 'react-icons/di';
 import {FaReact, FaNodeJs, FaGitAlt} from 'react-icons/fa'
-import {SiJavascript, SiMongodb, SiExpress} from 'react-icons/si'
+import {SiJavascript, SiMongodb, SiExpress, SiJquery} from 'react-icons/si'
 
 export const StackData = [
     {
@@ -85,6 +85,11 @@ export const StackData = [
     {
         toolLabel:"Express.js",
         toolIcon:<SiExpress size="5em" color="#444"/>
+    },
+
+    {
+        toolLabel:"JQuery",
+        toolIcon:<SiJquery size="5em" color="#0769ad"/>
     },
 
 ]

@@ -1,5 +1,4 @@
 import NavBar from '../comps/NavBar'
-import styled from 'styled-components'
 import ProjCard from '../comps/ProjectCard';
 import ToolStackGraphic from '../comps/ToolStackGraphic';
 import Header from '../comps/Header';

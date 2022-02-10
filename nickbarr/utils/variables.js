@@ -144,3 +144,14 @@ export const Footer_theme = {
         color:grey
     }
 }
+
+// scroll to top icon theme
+export const ScrollTop_theme = {
+    default:{
+        bgcolor:purple,
+    },
+    
+    light:{
+        bgcolor:red,
+    }
+}

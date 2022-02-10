@@ -19,7 +19,7 @@ export const Button = styled.div`
    font-size: 3rem;
    z-index: 1;
    cursor: pointer;
-   color: blue;
+   color: ${props=>props.bgcolor};
 
    @media only screen and (max-width: 600px) {
       left:85%;

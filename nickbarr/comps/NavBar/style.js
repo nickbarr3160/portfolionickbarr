@@ -15,10 +15,12 @@ font-size:3em;
 color:${props=>props.color};
 &:hover{
 color: ${props=>props.hovColor}; 
+cursor:pointer;
 }
 `;
 
 export const LinkCont = styled.div`
+
 display:flex;
 font-size:1.3em;
 justify-content:space-evenly;
@@ -32,10 +34,8 @@ width:80%;
 font-size:1.1em;
 }
 
-.link{
-    &:hover{
-        color: ${props=>props.hovColor}; 
-        }
-}
+// .link{
+// color: ${props=>props.hovColor};         
+// }
 
 `;

@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
 import { Button } from './style';
-  
+import { ScrollTop_theme } from "../../utils/variables";
+import {useTheme} from '../../utils/provider'  
+
 const ScrollButton = () =>{
   
   const [visible, setVisible] = useState(false)
@@ -28,10 +30,10 @@ const ScrollButton = () =>{
       });
     };
     
-    
+    const {theme} = useTheme();
   
   return (
-    <Button>
+    <Button bgcolor={ScrollTop_theme[theme].bgcolor}>
      <FaArrowCircleUp onClick={scrollToTop} 
      style={{display: visible ? 'inline' : 'none'}} size="1em" />
     </Button>

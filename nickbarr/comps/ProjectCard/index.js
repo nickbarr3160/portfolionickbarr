@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 import ToolTag from "../ToolTag"
 import {BsCodeSlash} from 'react-icons/bs'; 
 import {MdLaunch} from 'react-icons/md'; 
@@ -19,6 +20,7 @@ const ProjCard = ({
     const {theme} = useTheme();
     return <ProjCardCont bgcolor={ProjCard_theme[theme].cardbg}>
             <ProjHeading  color={ProjCard_theme[theme].color}>{projHeading}</ProjHeading>
+            {/* <Image src="/buzzy.jpeg" height={300} width={400} /> */}
             <ProjDescrip color={ProjCard_theme[theme].color}>{projDescrip}</ProjDescrip>
             <ToolTagCont>
                 <ToolTag tool={tool1}/>
