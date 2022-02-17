@@ -5,7 +5,7 @@ export const HeroMessageData =
     IntroMessage:"Hey. I'm",
     IntroMessagefName:"Nicholas",
     IntroMessagelName:"Barr",
-    IntroDescrip:"I am a Front-End Developer from Vancouver, British Columbia. I enjoy writing clean code, building beautiful user interfaces and providing solutions to problems in the tech space."
+    IntroDescrip:"I am a Front-End Developer from Vancouver, British Columbia. I enjoy writing clean code, building beautiful user interfaces and graphics and providing solutions to problems in the tech space."
     
 }
 
@@ -30,7 +30,7 @@ export const ProjCardData = [
         tool3:"Node.js",
         tool4:"CSS",
         codeSrc:"https://final-eco-how-repo.vercel.app/home",
-        gitSrc:""
+        gitSrc:"https://github.com/npm-i-abhay/final_EcoHow_repo"
     },
     
     {
@@ -96,7 +96,7 @@ export const StackData = [
 
 //data for get in touch buttons
 import {MdEmail} from 'react-icons/md'
-import {AiFillLinkedin} from 'react-icons/ai';
+import {AiFillLinkedin, AiFillFilePdf} from 'react-icons/ai';
 
 
 export const ButtonData = [
@@ -113,6 +113,12 @@ export const ButtonData = [
     {
         label:"GitHub",
         icon:<AiFillGithub/>,
+        route:"https://github.com/nickbarr3160"
+    },
+    
+    {
+        label:"Resume",
+        icon:<AiFillFilePdf/>,
         route:"https://github.com/nickbarr3160"
     },
 ]

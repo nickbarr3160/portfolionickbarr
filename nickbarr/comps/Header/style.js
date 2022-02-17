@@ -5,9 +5,11 @@ display:flex;
 flex-direction:column;
 justify-content:space-evenly;
 align-items:center;
+text-align:center;
 width:10em;
 height:25vh;
 font-size:2em;
+flex-wrap:nowrap;
 color:${props=>props.color};
 `;
 

@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
+
+
     export const HeroMessageCont= styled.div`
     display:flex;
     width:100%;
+    height:60vh;
     justify-content:center;
     align-items:center;
+    @media only screen and (max-width: 600px) {
+        height:70vh
+        }    
     `;
 
     export const MainCont = styled.div`
@@ -48,4 +54,8 @@ import styled from "styled-components";
     align-items:center;
     justify-content:space-evenly;
     width:40%;
+    @media only screen and (max-width: 550px) {
+        flex-direction:column;
+        height:50vh
+        } 
     `;

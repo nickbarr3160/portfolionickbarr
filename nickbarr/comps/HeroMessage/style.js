@@ -32,6 +32,7 @@ width:50%;
 display:flex;
 justify-content:flex-start;
 text-align:left;
+flex-wrap:nowrap;
 @media only screen and (max-width: 600px) {
     width:90%;
 }   
