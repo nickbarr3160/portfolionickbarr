@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 export const ProjCardCont = styled.div`
 width 70%;
-height:50vh;
+height:90vh;
 display:flex;
 flex-direction:column;
-justify-content:space-between;
+justify-content:space-evenly;
 align-items:center;
 background-color:${props=>props.bgcolor};
 margin:1em;
@@ -33,7 +33,6 @@ text-align:center;
 color:${props=>props.color};
 // Used to adjust font size for mobile screens
 @media only screen and (max-width: 500px) {
-height:40%;
 font-size:3vw;
 }
 `;

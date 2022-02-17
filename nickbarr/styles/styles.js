@@ -18,7 +18,6 @@ import styled from "styled-components";
     flex:1;
     flex-direction:column;
     width:100%;
-    justify-content:space-;
     align-items:center;
     `;
     
@@ -29,6 +28,15 @@ import styled from "styled-components";
     justify-content:space-between;
     width:100%;
     `;
+
+    export const DesignProjCont = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    `;
+
     
     export const ToolStackCont = styled.div`
     display:flex;

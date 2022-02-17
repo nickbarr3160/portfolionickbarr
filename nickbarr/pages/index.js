@@ -5,7 +5,7 @@ import Header from '../comps/Header';
 import HeroMessage from '../comps/HeroMessage'
 import { ProjCardData, StackData, ButtonData } from '../data/data';
 import {useRouter} from 'next/router';
-import { MainCont, ProjCardCont, ToolStackCont, HeroMessageCont, ButtonCont } from '../styles/styles';
+import { MainCont, ProjCardCont, DesignProjCont, ToolStackCont, HeroMessageCont, ButtonCont } from '../styles/styles';
 import ScrollButton from '../comps/ScrollToTop'
 import Button from '../comps/Button'
 import Footer from '../comps/Footer'
@@ -13,15 +13,19 @@ import {useTheme} from '../utils/provider'
 import {BsFillMoonStarsFill } from 'react-icons/bs';
 import {FaSun} from 'react-icons/fa'
 import { toggle_theme } from "../utils/variables";
+import DesignProj from '../comps/DesignProjects';
 
 //data used for component data mapping
 var cardData = ProjCardData
 var stackData = StackData
 var buttonData = ButtonData
 
+
 export default function Nick() {
-    const {theme, setTheme} = useTheme()
-    const router = useRouter();
+    
+  const {theme, setTheme} = useTheme()
+  const router = useRouter();
+
     return (
     <MainCont>
         <NavBar 
@@ -51,7 +55,13 @@ export default function Nick() {
 
         </ProjCardCont>
 
-        <Header heading="Tool Stack"/>
+        <Header heading="design projects"/>
+
+        <DesignProjCont>
+           <DesignProj/>
+        </DesignProjCont>
+
+        <Header heading="Tech Stack"/>
         <ToolStackCont>
             {stackData.map((o,i)=>{
                            return <ToolStackGraphic 

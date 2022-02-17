@@ -6,9 +6,9 @@ justify-content:center;
 align-items:center;
 width:100%;
 height:40vh;
-@media only screen and (max-width: 600px) {
+margin:1em;
+@media only screen and (max-width: 950px) {
     flex-direction:column;
-    height:100%;
     }
 `;
 
@@ -19,7 +19,6 @@ justify-content:center;
 align-items:center;
 width:50%;
 height:100%;
-font-size:4em;
 color:${props=>props.color};
 @media only screen and (max-width: 600px) {
     width:90%;
@@ -29,19 +28,24 @@ color:${props=>props.color};
 export const IntroMessageName = styled.div`
 color:${props=>props.color};
 width:50%;
+height:100%;
 display:flex;
 justify-content:flex-start;
 text-align:left;
-flex-wrap:nowrap;
-@media only screen and (max-width: 600px) {
+flex-wrap:wrap;
+font-weight:bold;
+font-size:4em;
+@media only screen and (max-width: 900px) {
     width:90%;
-}   
+    font-size:3em;
+} 
+
 `;
 
 export const IntroDescrip = styled.div`
 display:flex;
 flex-direction:column;
-justify-content:space-evenly;
+justify-content:space-between;
 align-items:center;
 width:50%;
 color:${props=>props.color};

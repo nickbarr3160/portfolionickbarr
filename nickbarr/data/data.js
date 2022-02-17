@@ -2,7 +2,7 @@
 //Data for the HeroMessage components
 export const HeroMessageData = 
 {
-    IntroMessage:"Hey. I'm",
+    IntroMessage:"I'm",
     IntroMessagefName:"Nicholas",
     IntroMessagelName:"Barr",
     IntroDescrip:"I am a Front-End Developer from Vancouver, British Columbia. I enjoy writing clean code, building beautiful user interfaces and graphics and providing solutions to problems in the tech space."
@@ -26,7 +26,7 @@ export const ProjCardData = [
         projHeading:"EcoHow",
         projDescrip:"React application built to assess your knowledge toward your sustainability habits and how to improve upon them.",
         tool1:"React.js",
-        tool2:"JavaScript",
+        tool2:"JS",
         tool3:"Node.js",
         tool4:"CSS",
         codeSrc:"https://final-eco-how-repo.vercel.app/home",
@@ -39,7 +39,7 @@ export const ProjCardData = [
         tool1:"React.js",
         tool2:"Axios",
         tool3:"Node.js",
-        tool4:"JavaScript",
+        tool4:"JS",
         codeSrc:"",
         gitSrc:""
     }
@@ -122,3 +122,66 @@ export const ButtonData = [
         route:"https://github.com/nickbarr3160"
     },
 ]
+
+//data for image list in DesignProjCard component
+import image from '../public/buzzy.jpeg'
+export const imgData = [
+    {
+      img: '/buzzy.jpeg',
+      title: 'Breakfast',
+      rows: 2,
+      cols: 2,
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+      title: 'Burger',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+      title: 'Camera',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+      title: 'Coffee',
+      cols: 2,
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+      title: 'Hats',
+      cols: 2,
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+      title: 'Honey',
+      author: '@arwinneil',
+      rows: 2,
+      cols: 2,
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+      title: 'Basketball',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+      title: 'Fern',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+      title: 'Mushrooms',
+      rows: 2,
+      cols: 2,
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+      title: 'Tomato basil',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+      title: 'Sea star',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+      title: 'Bike',
+      cols: 2,
+    },
+  ];

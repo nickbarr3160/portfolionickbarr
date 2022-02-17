@@ -6,6 +6,7 @@ import {MdLaunch} from 'react-icons/md';
 import {ProjCardCont, ProjHeading, ProjDescrip, ToolTagCont, IconCont, Icons } from "./style";
 import { ProjCard_theme } from "../../utils/variables";
 import {useTheme} from '../../utils/provider'
+import VideoPlayer from "../ReactVideo";
 
 const ProjCard = ({
     projHeading="",
@@ -20,7 +21,7 @@ const ProjCard = ({
     const {theme} = useTheme();
     return <ProjCardCont bgcolor={ProjCard_theme[theme].cardbg}>
             <ProjHeading  color={ProjCard_theme[theme].color}>{projHeading}</ProjHeading>
-            {/* <Image src="/buzzy.jpeg" height={300} width={400} /> */}
+            <VideoPlayer/>
             <ProjDescrip color={ProjCard_theme[theme].color}>{projDescrip}</ProjDescrip>
             <ToolTagCont>
                 <ToolTag tool={tool1}/>
