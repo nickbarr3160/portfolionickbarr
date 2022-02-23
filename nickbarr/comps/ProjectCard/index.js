@@ -16,12 +16,13 @@ const ProjCard = ({
     tool3="default",
     tool4="default",
     onSrcCodepress=()=>{},
-    onGitPress=()=>{}
+    onGitPress=()=>{},
+    thumbSrc=""
 }) => {
     const {theme} = useTheme();
     return <ProjCardCont bgcolor={ProjCard_theme[theme].cardbg}>
             <ProjHeading  color={ProjCard_theme[theme].color}>{projHeading}</ProjHeading>
-            <VideoPlayer/>
+            <VideoPlayer thumbSrc={thumbSrc}/>
             <ProjDescrip color={ProjCard_theme[theme].color}>{projDescrip}</ProjDescrip>
             <ToolTagCont>
                 <ToolTag tool={tool1}/>

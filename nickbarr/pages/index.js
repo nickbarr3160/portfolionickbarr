@@ -42,6 +42,7 @@ export default function Nick() {
         <ProjCardCont>
             {cardData.map((o,i)=>{
                            return <ProjCard 
+                           key={i}
                            projHeading={o.projHeading} 
                            projDescrip={o.projDescrip}
                            tool1={o.tool1}
@@ -50,6 +51,7 @@ export default function Nick() {
                            tool4={o.tool4}
                            onSrcCodepress={()=>router.push(o.codeSrc)}
                            onGitPress={()=>router.push(o.gitSrc)}
+                           thumbSrc={o.thumbSrc}
                           />
                         })}
 
@@ -65,6 +67,7 @@ export default function Nick() {
         <ToolStackCont>
             {stackData.map((o,i)=>{
                            return <ToolStackGraphic 
+                           key={i}
                            toolLabel={o.toolLabel}
                            icon={o.toolIcon}
                           />
@@ -78,6 +81,7 @@ export default function Nick() {
         <ButtonCont>
         {buttonData.map((o,i)=>{
                            return <Button
+                           key={i}
                            label={o.label}
                            icon={o.icon}
                            onButClick={()=>router.push(o.route)}
