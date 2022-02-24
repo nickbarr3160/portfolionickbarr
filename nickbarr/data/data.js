@@ -140,38 +140,26 @@ export const imgData = [
     {
       img: './jt.png',
       title: 'JT Miller',
-      rows:4,
+      rows:5,
       cols:2
     },
     {
       img: '/rolex.jpg',
       title: 'Rolex Watch',
       author: '@arwinneil',
-      rows: 4,
+      rows: 2,
       cols: 2,
-    },
-    {
-      img: 'brochureRedesign.jpg',
-      title: 'Studio G Brochure',
-      rows:5,
-      cols:1
     },
     {
       img: 'swissPoster1.png',
       title: 'Poster for the fictional Proms award show',
-      rows:2.5,
-      cols:1,
+      rows:5,
+      cols:2,
     },
     {
       img: 'bookcover.jpg',
       title: 'fictional movie cover',
-      rows: 4,
+      rows: 5,
       cols: 2,
     },
-    {
-      img: 'swissPoster2.png',
-      title: 'Poster for the fictional Proms award show',
-      rows:2.5,
-      cols:1,
-    }
   ];
