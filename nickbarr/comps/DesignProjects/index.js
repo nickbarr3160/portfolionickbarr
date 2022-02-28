@@ -15,7 +15,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 const DesignProj = () => {
   return (
     <ImageList
-      sx={{ width: '80%', height: '90vh' , borderRadius:"30px", overflowX:'auto'}}
+      sx={{ width: '500', height: '90vh' , borderRadius:"30px", overflowX:'scroll'}}
       variant="quilted"
       cols={4}
       rowHeight={121}

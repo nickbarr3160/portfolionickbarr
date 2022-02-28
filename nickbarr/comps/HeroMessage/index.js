@@ -5,6 +5,7 @@ import { HeroMessageData } from "../../data/data";
 import {AiFillGithub} from 'react-icons/ai';
 import { HeroMessage_theme } from "../../utils/variables";
 import {useTheme} from '../../utils/provider'
+import {useRouter} from 'next/router';
 
 const HeroMessage = ({
     message=HeroMessageData.IntroMessage,
@@ -13,6 +14,7 @@ const HeroMessage = ({
     lname=HeroMessageData.IntroMessagelName,
 }) => {
     const {theme} = useTheme();
+    const router = useRouter();
     return <HeroCont>
         
         <IntroMessage >  
@@ -29,7 +31,7 @@ const HeroMessage = ({
 
         <IntroDescrip color={HeroMessage_theme[theme].heroIntroDescrip}>
             {descrip}
-            <Button label="GitHub" icon={<AiFillGithub/>}/>
+            <Button label="GitHub" icon={<AiFillGithub/>} onButClick={()=>router.push("https://github.com/nickbarr3160")}/>
         </IntroDescrip>
 
     </HeroCont>

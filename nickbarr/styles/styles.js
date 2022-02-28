@@ -59,12 +59,11 @@ import styled from "styled-components";
     export const ButtonCont = styled.div`
     display:flex;
     height:25vh;
-    flex-wrap:wrap;
     align-items:center;
     justify-content:space-evenly;
     width:40%;
     @media only screen and (max-width: 550px) {
-       
+        flex-direction:column;
         height:50vh
         } 
     `;

@@ -9,7 +9,7 @@ const ToolStackGraphic = ({
     icon="hi"
 }) => {
     const {theme} = useTheme();
-    return <ToolGraphicCont bgcolor={ToolStack_theme[theme].cardbg}  color={ToolStack_theme[theme].color}>
+    return <ToolGraphicCont bgcolor={ToolStack_theme[theme].cardbg} hoverbgcolor={ToolStack_theme[theme].hovbgcolor} color={ToolStack_theme[theme].color}  hovercolor={ToolStack_theme[theme].hovcolor}>
             {icon}
             {toolLabel}
         </ToolGraphicCont>

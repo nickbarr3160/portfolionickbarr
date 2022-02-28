@@ -11,5 +11,13 @@ align-items:center;
 margin:1em;
 background-color:${props=>props.bgcolor};
 color:${props=>props.color};
+transition: 0.5s;
+&:hover{
+    background-color:${props=>props.hoverbgcolor};
+    color:${props=>props.hovercolor};
+    cursor:pointer;
+    }
+
 box-shadow:0 2px 4px rgb(0 0 0/20%);
 `;
+

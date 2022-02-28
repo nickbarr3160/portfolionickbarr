@@ -120,12 +120,16 @@ export const ProjCard_theme = {
 export const ToolStack_theme = {
     default:{
         cardbg:altPurple,
-        color:violet
+        color:violet,
+        hovbgcolor:purple,
+        hovcolor:navy
     },
     
     light:{
         cardbg:white,
-        color:grey
+        color:grey,
+        hovbgcolor:red,
+        hovcolor:white
     }
 
 }

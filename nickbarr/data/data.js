@@ -5,7 +5,7 @@ export const HeroMessageData =
     IntroMessage:"I'm",
     IntroMessagefName:"Nicholas",
     IntroMessagelName:"Barr",
-    IntroDescrip:"I am a Front-End Developer from Vancouver, British Columbia. I enjoy writing clean code, building beautiful user interfaces and graphics and providing solutions to problems in the tech space."
+    IntroDescrip:"I am a Front-End Developer from Vancouver, British Columbia. I enjoy writing clean code, building beautiful user interfaces and graphics along with providing solutions to problems in the tech space."
     
 }
 
@@ -20,7 +20,7 @@ export const ProjCardData = [
         tool4:"SQL",
         codeSrc:"",
         gitSrc:"",
-        videoSrc:"",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
         thumbSrc:"/buzzy.jpeg"
     },
     
@@ -104,7 +104,6 @@ export const StackData = [
 import {MdEmail} from 'react-icons/md'
 import {AiFillLinkedin, AiFillFilePdf} from 'react-icons/ai';
 
-
 export const ButtonData = [
     {
         label:"Email",
@@ -125,7 +124,7 @@ export const ButtonData = [
     {
         label:"Resume",
         icon:<AiFillFilePdf/>,
-        route:"https://github.com/nickbarr3160"
+        route:'/Nicholas_Sameer_Barr_Resume.PDF'
     },
 ]
 

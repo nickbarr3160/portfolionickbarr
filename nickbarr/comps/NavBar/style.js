@@ -26,20 +26,31 @@ cursor:pointer;
 `;
 
 export const LinkCont = styled.div`
-
 display:flex;
 font-size:1.3em;
-justify-content:space-around;
+justify-content:space-evenly;
 align-items:center;
-width:60%;
+width:30%;
 height:100%;
 color:${props=>props.color};
 // Used to adjust width and font size for mobile screens
 @media only screen and (max-width: 500px) {
 width:75%;
 font-size:1.1em;
+width:50%;
 }
-
 
 `;
 
+export const IconCont= styled.div`
+&:hover{
+    opacity: 0.5; 
+    cursor:pointer;
+    }
+`;
+
+export const NavLink = styled.a`
+&:hover{
+    color:${props=>props.color};
+}
+`;

@@ -14,6 +14,7 @@ import {BsFillMoonStarsFill } from 'react-icons/bs';
 import {FaSun} from 'react-icons/fa'
 import { toggle_theme } from "../utils/variables";
 import DesignProj from '../comps/DesignProjects';
+import { HashLink as Link } from 'react-router-hash-link';
 
 //data used for component data mapping
 var cardData = ProjCardData
@@ -29,6 +30,7 @@ export default function Nick() {
     return (
     <MainCont>
         <NavBar 
+        anchor="#anchor"
         themeToggle={()=>setTheme(
         theme=== 'light'?'default':'light')}
         icon={theme==='light'?<BsFillMoonStarsFill color={toggle_theme[theme].icon} size="1.5em"/>:<FaSun color={toggle_theme[theme].icon} size="1.5em"/>}
@@ -52,6 +54,7 @@ export default function Nick() {
                            onSrcCodepress={()=>router.push(o.codeSrc)}
                            onGitPress={()=>router.push(o.gitSrc)}
                            thumbSrc={o.thumbSrc}
+                           videoSrc={o.videoSrc}
                           />
                         })}
 
@@ -78,7 +81,7 @@ export default function Nick() {
        
         <ScrollButton/>
         
-        <ButtonCont>
+        <ButtonCont id="anchor">
         {buttonData.map((o,i)=>{
                            return <Button
                            key={i}

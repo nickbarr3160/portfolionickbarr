@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { keyframes }  from 'styled-components';
+import { fadeInLeft } from 'react-animations';
+
 
 export const HeroCont = styled.div`
 display:flex;
@@ -9,7 +11,7 @@ height:40vh;
 margin:1em;
 @media only screen and (max-width: 950px) {
     flex-direction:column;
-    }
+}
 `;
 
 export const IntroMessage = styled.div`
@@ -25,6 +27,9 @@ color:${props=>props.color};
 }   
 `;
 
+// variable storing the animation for the intro name
+const fadeAnimation = keyframes`${fadeInLeft}`;
+
 export const IntroMessageName = styled.div`
 color:${props=>props.color};
 width:50%;
@@ -35,6 +40,7 @@ text-align:left;
 flex-wrap:wrap;
 font-weight:bold;
 font-size:4em;
+animation: 1.5s ${fadeAnimation};
 @media only screen and (max-width: 900px) {
     width:90%;
     font-size:3em;
