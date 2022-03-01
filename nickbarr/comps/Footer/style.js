@@ -7,7 +7,7 @@ flex-direction:column;
 box-shadow:0 -0.1em 1em rgb(0 0 0 / 10%);
 justify-content:space-evenly;
 align-items:center;
-height:30vh;
+height:100%;
 width:100%;
 color:${props=>props.color};
 background-color:${props=>props.bgcolor};
