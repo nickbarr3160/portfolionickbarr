@@ -13,7 +13,7 @@ export const HeroMessageData =
 export const ProjCardData = [
     {
         projHeading:"BuzzyBee",
-        projDescrip:"Buzzy Bee is a native organizer application that fetches data from the school’s portal (mocked) and automatically adds the student’s course schedule to the built in calendar and much more...",
+        projDescrip:"Buzzy Bee is a native organizer application that fetches data from the school’s portal (mocked) and automatically adds the student’s course schedule to the built in calendar and much more... Unfortunatley BuzzyBee is a react native mobile application only, launched on Expo Go. However a video of app functionality will be linked.",
         tool1:"React.js",
         tool2:"Firebase",
         tool3:"Node.js",
@@ -39,7 +39,7 @@ export const ProjCardData = [
     
     {
         projHeading:"MixElixir",
-        projDescrip:"This is a simple webapp that allows users to get over the dilemma of what beverage they can make based on the ingredients they have on hand.",
+        projDescrip:"This is a simple webapp that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand.",
         tool1:"React.js",
         tool2:"Axios",
         tool3:"Node.js",
@@ -145,7 +145,6 @@ export const imgData = [
     {
       img: '/rolex.jpg',
       title: 'Rolex Watch',
-      author: '@arwinneil',
       rows: 2,
       cols: 2,
     },
