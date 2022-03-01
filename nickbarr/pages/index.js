@@ -67,6 +67,7 @@ export default function Nick() {
         </DesignProjCont>
 
         <Header heading="Tech Stack"/>
+        
         <ToolStackCont>
             {stackData.map((o,i)=>{
                            return <ToolStackGraphic 
@@ -81,7 +82,7 @@ export default function Nick() {
        
         <ScrollButton/>
         
-        <ButtonCont id="anchor">
+        {/* <ButtonCont id="anchor">
         {buttonData.map((o,i)=>{
                            return <Button
                            key={i}
@@ -90,9 +91,9 @@ export default function Nick() {
                            onButClick={()=>router.push(o.route)}
                           />
                         })}                
-        </ButtonCont>
-        <Footer footerText='Nicholas Barr 2022'/>
-       
+        </ButtonCont> */}
+          <Footer footerText='Nicholas Barr 2022'/>
+        
     </MainCont>
     )
     

@@ -18,6 +18,7 @@ const NavBar = ({
         <Logo color={NavBar_theme[theme].logo} hovColor={NavBar_theme[theme].logoHover}>{logoText}</Logo>
         <LinkCont color={NavBar_theme[theme].links}>
             <NavLink href={anchor} color={NavBar_theme[theme].linkHover}>CONTACT</NavLink>
+            <NavLink href={anchor} color={NavBar_theme[theme].linkHover}>ABOUT</NavLink>
             <IconCont  onClick={themeToggle}>
                 {icon}
             </IconCont>
