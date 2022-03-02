@@ -1,17 +1,22 @@
 import React from "react";
-import { AboutMeCont, AboutMeImg, AboutMeTextCont } from "./style";
+import { AboutMeCont, AboutMeImg, AboutMeTextCont,AboutMeTxtCol } from "./style";
 
 
 const AboutMe = ({
-    info="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    info="",
+    imgSrc="",
+    heading=""
 }) => {
     return <AboutMeCont>
         
-        <AboutMeTextCont>
-            {info}
-        </AboutMeTextCont> 
+        <AboutMeTxtCol>
+            <h1>{heading}</h1>
+            <AboutMeTextCont>
+                {info}
+            </AboutMeTextCont> 
+        </AboutMeTxtCol>
 
-        <AboutMeImg src="/nickbarr.png"/>
+        <AboutMeImg src={imgSrc}/>
     </AboutMeCont>
 }
 

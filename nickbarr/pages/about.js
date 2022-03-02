@@ -9,8 +9,11 @@ import {FaSun} from 'react-icons/fa'
 import {useRouter} from 'next/router';
 import Header from "../comps/Header"
 import AboutMeInfo from "../comps/AboutMeInfo"
-
+import ScrollButton from "../comps/ScrollToTop"
+import { AboutMeData } from "../data/data"
 export default function About() {
+  
+  var aboutMeData = AboutMeData
   
   const {theme, setTheme} = useTheme()
   const router = useRouter();
@@ -23,11 +26,21 @@ export default function About() {
         icon={theme==='light'?<BsFillMoonStarsFill color={toggle_theme[theme].icon} size="1.5em"/>:<FaSun color={toggle_theme[theme].icon} size="1.5em"/>}
         />
       <AboutIntro/>
-        <Header heading="about me"/>
-      <AboutMeInfo />
+      
+      <Header heading="about me"/>
+      
+      {aboutMeData.map((o,i)=>{
+                           return <AboutMeInfo 
+                           key={i}
+                           heading={o.heading}
+                           info={o.text}
+                           imgSrc={o.imgSrc}
+                          />
+                        })}
 
       <Header heading="Get in touch"/>
       
+      <ScrollButton/>
       <Footer footerText='Nicholas Sameer Barr 2022'/>
   
   </MainCont>
