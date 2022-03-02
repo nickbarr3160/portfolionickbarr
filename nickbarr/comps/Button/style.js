@@ -14,7 +14,6 @@ font-size: 16px;
 transition-duration: 0.4s;
 cursor: pointer;
 border-radius:30px;
-margin:1em;
 &:hover{
     background-color: ${props=>props.hovColor}; 
 }

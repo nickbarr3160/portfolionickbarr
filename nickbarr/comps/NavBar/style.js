@@ -34,10 +34,9 @@ width:30%;
 height:100%;
 color:${props=>props.color};
 // Used to adjust width and font size for mobile screens
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
 width:75%;
 font-size:1.1em;
-width:50%;
 }
 
 `;

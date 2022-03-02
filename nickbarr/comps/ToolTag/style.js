@@ -10,7 +10,7 @@ padding:0.5em;
 border-radius:20px;
 background-color:${props=>props.bgcolor};
 color:${props=>props.color};
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     font-size:0.7em;
     height:90%;
     width:25%;

@@ -40,7 +40,12 @@ export default function Nick() {
             <HeroMessage/>
         </HeroMessageCont>
         
+        <br></br>
+        <br></br>
+        <br></br>
+        
         <Header heading="Development Projects"/>
+        
         <ProjCardCont>
             {cardData.map((o,i)=>{
                            return <ProjCard 
@@ -52,7 +57,7 @@ export default function Nick() {
                            tool3={o.tool3}
                            tool4={o.tool4}
                            onSrcCodepress={()=>router.push(o.codeSrc)}
-                           onGitPress={()=>router.push(o.gitSrc)}
+                           onGitPress={()=>router.push(o.appSrc)}
                            thumbSrc={o.thumbSrc}
                            videoSrc={o.videoSrc}
                           />
@@ -60,11 +65,11 @@ export default function Nick() {
 
         </ProjCardCont>
 
-        <Header heading="design projects"/>
+        {/* <Header heading="design projects"/>
 
         <DesignProjCont>
            <DesignProj/>
-        </DesignProjCont>
+        </DesignProjCont> */}
 
         <Header heading="Tech Stack"/>
         
@@ -82,17 +87,7 @@ export default function Nick() {
        
         <ScrollButton/>
         
-        {/* <ButtonCont id="anchor">
-        {buttonData.map((o,i)=>{
-                           return <Button
-                           key={i}
-                           label={o.label}
-                           icon={o.icon}
-                           onButClick={()=>router.push(o.route)}
-                          />
-                        })}                
-        </ButtonCont> */}
-          <Footer footerText='Nicholas Barr 2022'/>
+          <Footer footerText='Nicholas Sameer Barr 2022'/>
         
     </MainCont>
     )

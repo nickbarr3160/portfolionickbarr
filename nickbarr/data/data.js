@@ -13,39 +13,39 @@ export const HeroMessageData =
 export const ProjCardData = [
     {
         projHeading:"BuzzyBee",
-        projDescrip:"Buzzy Bee is a native organizer application that fetches data from the school’s portal (mocked) and automatically adds the student’s course schedule to the built in calendar and much more... Unfortunatley BuzzyBee is a react native mobile application only, launched on Expo Go. However a video of app functionality will be linked.",
+        projDescrip:"Buzzy Bee is a native organizer application that fetches data from the school’s portal (mocked) and automatically adds the student’s course schedule to the built in calendar and much more... Unfortunately BuzzyBee is a react native mobile application only, launched on Expo Go and cannot be viewed on the web. However a video of app functionalities will be linked below.",
         tool1:"React.js",
         tool2:"Firebase",
         tool3:"Node.js",
         tool4:"SQL",
         codeSrc:"",
-        gitSrc:"",
+        appSrc:"",
         videoSrc:"https://youtu.be/FPFm8VoWypQ",
         thumbSrc:"/buzzy.jpeg"
     },
     
     {
         projHeading:"EcoHow",
-        projDescrip:"React application built to assess your knowledge toward your sustainability habits and how to improve upon them.",
+        projDescrip:"EcoHow is a React application built to assess your knowledge toward your sustainability habits and how to improve upon them with a fun game at the end.",
         tool1:"React.js",
         tool2:"JS",
         tool3:"Node.js",
         tool4:"CSS",
-        codeSrc:"https://final-eco-how-repo.vercel.app/home",
-        gitSrc:"https://github.com/npm-i-abhay/final_EcoHow_repo",
+        codeSrc:"https://github.com/npm-i-abhay/final_EcoHow_repo",
+        appSrc:"https://final-eco-how-repo.vercel.app/home",
         videoSrc:"",
         thumbSrc:"/recycle.jpg"
     },
     
     {
         projHeading:"MixElixir",
-        projDescrip:"This is a simple webapp that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand.",
+        projDescrip:"MixElixir is a simple webapp that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more... THIS PROJECT IS CURRENTLY UNDER DEVELOPMENT coming soon to a phone near you...",
         tool1:"React.js",
         tool2:"Axios",
         tool3:"Node.js",
         tool4:"JS",
         codeSrc:"",
-        gitSrc:"",
+        appSrc:"",
         videoSrc:"",
         thumbSrc:"/drink.jpg"
     }
@@ -128,7 +128,7 @@ export const ButtonData = [
     },
 ]
 
-//data for image list in DesignProjCard component
+//data for image list in DesignProjCard component (Currently not being used)
 export const imgData = [
     {
       img: '/buzzy.jpeg',

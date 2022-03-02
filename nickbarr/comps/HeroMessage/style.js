@@ -62,3 +62,9 @@ padding:1em;
 }   
 `;
 
+export const ButtonCont = styled.div`
+display:flex;
+margin-top:2em;
+width:100%;
+justify-content:flex-start;
+`;

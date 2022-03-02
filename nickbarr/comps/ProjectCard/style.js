@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const ProjCardCont = styled.div`
 width 70%;
-height:90vh;
+height:110vh;
 display:flex;
 flex-direction:column;
 justify-content:space-evenly;
@@ -13,6 +13,10 @@ margin:1em;
 box-shadow:0 2px 4px rgb(0 0 0/20%);;
 border-radius:1em;
 padding:1em;
+@media only screen and (max-width: 500px) {
+    height:90vh;
+    width:85%;
+    }  
 `;
 export const ProjHeading = styled.div`
 font-size:3vw;
