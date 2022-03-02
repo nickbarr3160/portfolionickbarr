@@ -4,9 +4,9 @@ export const AboutMeCont = styled.div`
 display:flex;
 width:80vw;
 justify-content:space-around;
+margin:2em;
 align-items:center;
 padding:1em;
-border:2px solid green;
 color:white;
 @media only screen and (max-width: 900px) {
     flex-direction:column;
@@ -18,7 +18,7 @@ color:white;
 export const AboutMeTextCont = styled.div`
 height:100%;
 width:100%;
-border: 2px solid blue;
+color:${props=>props.color};
 @media only screen and (max-width: 770px) {
     width:95%;
     }
@@ -40,6 +40,10 @@ aspect-ratio: auto 500 / 500;
     }
 
 `;
+
+export const AboutMeHeading = styled.h1`
+color:${props=>props.color};
+`
 
 export const AboutMeTxtCol=styled.div`
 display:flex;

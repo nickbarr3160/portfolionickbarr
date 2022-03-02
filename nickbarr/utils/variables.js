@@ -159,3 +159,31 @@ export const ScrollTop_theme = {
         bgcolor:red,
     }
 }
+
+//AboutIntro theme
+export const About_Intro_theme = {
+    default:{
+        heading1Col:purple,
+        heading2Col:violet,
+        heading3Col:purple,
+        parCol:violet
+    },
+    light:{
+        heading1Col:red,
+        heading2Col:grey,
+        heading3Col:red,
+        parCol:grey
+    }
+}
+
+//AboutMeInfo theme
+export const About_Me_theme = {
+    default:{
+        headingCol:purple,
+        parCol:violet
+    },
+    light:{
+        headingCol:red,
+        parCol:grey
+    }
+}
