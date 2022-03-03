@@ -137,7 +137,7 @@ export const ButtonData = [
     {
         label:"Resume",
         icon:<AiFillFilePdf/>,
-        route:'/Nicholas_Sameer_Barr_Resume.PDF'
+        route:'/nickBarrResume.PDF'
     },
 ]
 
