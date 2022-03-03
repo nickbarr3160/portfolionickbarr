@@ -13,7 +13,7 @@ export const HeroMessageData =
 export const ProjCardData = [
     {
         projHeading:"BuzzyBee",
-        projDescrip:"Buzzy Bee is a native organizer application that fetches data from the school’s portal (mocked) and automatically adds the student’s course schedule to the built in calendar and much more... Unfortunately BuzzyBee is a react native mobile application only, launched on Expo Go and cannot be viewed on the web. However a video of app functionalities will be linked below.",
+        projDescrip:"Buzzy Bee is a native organizer application developed with a team that fetches data from the school’s portal (mocked) and automatically adds the student’s course schedule to the built in calendar and much more... Unfortunately BuzzyBee is a react native mobile application only, launched on Expo Go and cannot be viewed on the web. However a video of app functionalities will be linked below.",
         tool1:"React.js",
         tool2:"Firebase",
         tool3:"Node.js",
@@ -26,7 +26,7 @@ export const ProjCardData = [
     
     {
         projHeading:"EcoHow",
-        projDescrip:"EcoHow is a React application built to assess your knowledge toward your sustainability habits and how to improve upon them with a fun game at the end.",
+        projDescrip:"EcoHow is a React application developed with a team built to assess your knowledge toward your sustainability habits and how to improve upon them with a fun game at the end.",
         tool1:"React.js",
         tool2:"JS",
         tool3:"Node.js",
@@ -39,15 +39,28 @@ export const ProjCardData = [
     
     {
         projHeading:"MixElixir",
-        projDescrip:"MixElixir is a simple webapp that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more... THIS PROJECT IS CURRENTLY UNDER DEVELOPMENT coming soon to a phone near you...",
+        projDescrip:"MixElixir is a simple webapp developed with a team that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more... THIS PROJECT IS CURRENTLY UNDER DEVELOPMENT coming soon to a phone near you...",
         tool1:"React.js",
         tool2:"Axios",
         tool3:"Node.js",
         tool4:"JS",
-        codeSrc:"",
+        codeSrc:"https://github.com/nickbarr3160/mixElixir",
         appSrc:"",
         videoSrc:"",
         thumbSrc:"/drink.jpg"
+    },
+
+    {
+        projHeading:"Kinder Kampus",
+        projDescrip:"Kinder Kampus is a wordpress site that was developed for an award winning daycare centre in the Vancouver area.",
+        tool1:"WordPress",
+        tool2:"CSS",
+        tool3:"Divi",
+        tool4:"GoDaddy",
+        codeSrc:"https://kinderkampus.ca/",
+        appSrc:"https://kinderkampus.ca/",
+        videoSrc:"https://youtu.be/TFCRyD64VDs",
+        thumbSrc:"/kkScreen.png"
     }
     
 ]
@@ -164,12 +177,12 @@ export const imgData = [
 
   export const AboutMeData = [
     {
-    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.",
-    imgSrc:'/nickbarr.png',
+    text:"What’s up! I’m Nick and I enjoy creating things that live in the internet world. My interest in web development started back in 2018 when I enrolled in Computer Science at the University of Western Ontario. There I learned the valuable skills of storing information in databases, sending data over networks, and providing new solutions to cyber security issues. Turns out this was a good fit for me although shackled my visual creativity as I am also a designer of graphics and much more second to being a developer. Fast forward to today I have had the privilege of completing the Digital Design and Development program at the British Columbia Institute of Technology. There I learned to work within a team to design and develop web and mobile applications.",
+    imgSrc:'/nicholasbarr.png',
     heading:"My Experience"
     },
     {
-        text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv.",
+        text:"When I am not working, I love to keep active with activities such as Hockey, Skiing and much more. I have played Hockey all my life and have unfortunately had the privilege of being a die-hard Vancouver Canucks fan over the past 20 years. My other passion is music as I have played Guitar and Piano for 15 years and continue to pursue new musical sounds and artists.",
         imgSrc:'/nickbarrHockey.jpg',
         heading:"Outside the office"
         }

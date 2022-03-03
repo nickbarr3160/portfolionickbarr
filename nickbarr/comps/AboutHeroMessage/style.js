@@ -29,6 +29,7 @@ font-size:40px;
 
 export const IntroPar = styled.p`
 color:${props=>props.color};
+margin-bottom:3em;
 @media only screen and (max-width: 500px) {
     font-size:3vw;
     }

@@ -4,7 +4,7 @@ export const AboutMeCont = styled.div`
 display:flex;
 width:80vw;
 justify-content:space-around;
-margin:2em;
+margin:1em;
 align-items:center;
 padding:1em;
 color:white;
@@ -28,7 +28,7 @@ export const AboutMeImg = styled.img`
 border-radius:10px;
 width:30%;
 aspect-ratio: auto 500 / 500;
-// height:400px;
+box-shadow:0 2px 4px rgb(0 0 0/40%);
 @media only screen and (max-width: 500px) {
     margin-top:3em;
     width:80%;
