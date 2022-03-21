@@ -7,7 +7,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 width:100%;
-height:40vh;
+height:50vh;
 margin:1em;
 @media only screen and (max-width: 950px) {
     flex-direction:column;
@@ -33,7 +33,7 @@ const fadeAnimation = keyframes`${fadeInLeft}`;
 export const IntroMessageName = styled.div`
 color:${props=>props.color};
 width:50%;
-height:100%;
+// height:100%;
 display:flex;
 justify-content:flex-start;
 text-align:left;
@@ -51,14 +51,18 @@ animation: 1.5s ${fadeAnimation};
 export const IntroDescrip = styled.div`
 display:flex;
 flex-direction:column;
-justify-content:space-between;
+justify-content:center;
 align-items:center;
 width:50%;
 color:${props=>props.color};
 height:100%;
-padding:1em;
+padding-right:1em;
 @media only screen and (max-width: 600px) {
-    width:90%;
+    width:80%;
+    padding-right:0em;
+}   
+@media only screen and (min-width: 1300px) {
+    font-size:25px;
 }   
 `;
 

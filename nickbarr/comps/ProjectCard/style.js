@@ -36,14 +36,16 @@ width:90%;
 height:20%;
 text-align:center;
 margin-top:1em;
+font-size:14px;
 color:${props=>props.color};
 // Used to adjust font size for mobile screens
 @media only screen and (max-width: 500px) {
 font-size:3vw;
 margin-top:0em;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1500px) {
     height:10%;
+    font-size:20px;
     }
 `;
 
