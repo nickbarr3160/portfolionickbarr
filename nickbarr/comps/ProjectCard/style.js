@@ -33,7 +33,7 @@ text-align:center;
 
 export const ProjDescrip = styled.div`
 width:90%;
-height:10%;
+height:20%;
 text-align:center;
 color:${props=>props.color};
 // Used to adjust font size for mobile screens

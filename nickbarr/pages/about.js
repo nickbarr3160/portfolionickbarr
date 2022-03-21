@@ -29,6 +29,7 @@ export default function About() {
     setWidth(screenWidth)
   },[])
 
+
   if (width>900){
     return <MainCont>
        <NavBar 
@@ -38,7 +39,7 @@ export default function About() {
         icon={theme==='light'?<BsFillMoonStarsFill color={toggle_theme[theme].icon} size="1.5em"/>:<FaSun color={toggle_theme[theme].icon} size="1.5em"/>}
         />
       <AboutIntro/>
-       {/* add screen size condition here */}
+       
        <Header heading="design samples"/>
 
         <DesignProjCont>
