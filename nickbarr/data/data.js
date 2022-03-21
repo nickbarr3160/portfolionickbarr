@@ -38,7 +38,7 @@ export const ProjCardData = [
     },
     {
         projHeading:"BuzzyBee",
-        projDescrip:"Buzzy Bee is a native organizer application developed with a team that fetches data from a school’s portal (mocked) and automatically adds the student’s courses to a schedule and much more... BuzzyBee is a react native mobile application only, launched on Expo Go and cannot be viewed on the web.",
+        projDescrip:"Buzzy Bee is a React native application developed with a team that fetches data from a school’s portal (mocked) and automatically adds the student’s courses to a schedule and much more... It is only launched on Expo Go and cannot be viewed on the web.",
         tool1:"React.js",
         tool2:"Firebase",
         tool3:"Node.js",
