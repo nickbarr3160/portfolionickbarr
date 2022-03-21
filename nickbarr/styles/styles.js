@@ -10,7 +10,11 @@ import styled from "styled-components";
     align-items:center;
     @media only screen and (max-width: 600px) {
         height:70vh
-        }    
+        }
+    
+    @media only screen and (min-width: 1500px) {
+        width:80%;
+    } 
     `;
 
     export const MainCont = styled.div`
@@ -23,9 +27,10 @@ import styled from "styled-components";
     
     export const ProjCardCont = styled.div`
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap:wrap;
     align-items:center;
-    justify-content:space-between;
+    justify-content:center;
     width:100%;
     `;
 

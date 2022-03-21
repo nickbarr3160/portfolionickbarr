@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 
 export const ProjCardCont = styled.div`
-width 70%;
-height:110vh;
+width 45%;
+height:120vh;
 display:flex;
 flex-direction:column;
 justify-content:space-evenly;
@@ -13,7 +13,7 @@ margin:1em;
 box-shadow:0 2px 4px rgb(0 0 0/20%);;
 border-radius:1em;
 padding:1em;
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     height:90vh;
     width:85%;
     }  
@@ -21,7 +21,7 @@ padding:1em;
 export const ProjHeading = styled.div`
 font-size:3vw;
 color:${props=>props.color};
-width:50%;
+width:60%;
 display:flex;
 justify-content:center;
 text-align:center;
@@ -33,6 +33,7 @@ text-align:center;
 
 export const ProjDescrip = styled.div`
 width:90%;
+height:10%;
 text-align:center;
 color:${props=>props.color};
 // Used to adjust font size for mobile screens

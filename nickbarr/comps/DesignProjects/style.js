@@ -18,4 +18,6 @@ margin:1em;
 &:hover{
     background-color: ${props=>props.hovColor}; 
 }
+
+
 `;

@@ -56,20 +56,14 @@ export default function Nick() {
                            tool2={o.tool2}
                            tool3={o.tool3}
                            tool4={o.tool4}
-                           onSrcCodepress={()=>router.push(o.codeSrc)}
-                           onGitPress={()=>router.push(o.appSrc)}
+                           onSrcCodepress={()=>{window.open(`${o.codeSrc}`, '_blank')}}
+                           onLaunchAppPress={()=>{window.open(`${o.appSrc}`, '_blank')}}
                            thumbSrc={o.thumbSrc}
                            videoSrc={o.videoSrc}
                           />
                         })}
 
         </ProjCardCont>
-
-        {/* <Header heading="design projects"/>
-
-        <DesignProjCont>
-           <DesignProj/>
-        </DesignProjCont> */}
 
         <Header heading="Tech Stack"/>
         

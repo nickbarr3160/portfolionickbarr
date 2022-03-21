@@ -12,44 +12,43 @@ export const HeroMessageData =
 // All data for Project Card component mapping
 export const ProjCardData = [
     {
-        projHeading:"BuzzyBee",
-        projDescrip:"Buzzy Bee is a native organizer application developed with a team that fetches data from the school’s portal (mocked) and automatically adds the student’s course schedule to the built in calendar and much more... Unfortunately BuzzyBee is a react native mobile application only, launched on Expo Go and cannot be viewed on the web. However a video of app functionalities will be linked below.",
-        tool1:"React.js",
-        tool2:"Firebase",
-        tool3:"Node.js",
-        tool4:"SQL",
-        codeSrc:"",
-        appSrc:"",
-        videoSrc:"https://youtu.be/FPFm8VoWypQ",
-        thumbSrc:"/buzzy.jpeg"
-    },
-    
-    {
         projHeading:"EcoHow",
-        projDescrip:"EcoHow is a React application developed with a team built to assess your knowledge toward your sustainability habits and how to improve upon them with a fun game at the end.",
+        projDescrip:"EcoHow is a React application developed with a team built to assess your knowledge toward your sustainability habits and how to improve upon them along with with a fun sorting game at the end.",
         tool1:"React.js",
         tool2:"JS",
         tool3:"Node.js",
         tool4:"CSS",
         codeSrc:"https://github.com/npm-i-abhay/final_EcoHow_repo",
         appSrc:"https://final-eco-how-repo.vercel.app/home",
-        videoSrc:"",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
         thumbSrc:"/recycle.jpg"
     },
     
     {
         projHeading:"MixElixir",
-        projDescrip:"MixElixir is a simple webapp developed with a team that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more... THIS PROJECT IS CURRENTLY UNDER DEVELOPMENT coming soon to a phone near you...",
+        projDescrip:"MixElixir is a React application developed with a team that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more... THIS PROJECT IS CURRENTLY UNDER DEVELOPMENT coming soon to a device near you...",
         tool1:"React.js",
         tool2:"Axios",
         tool3:"Node.js",
-        tool4:"JS",
+        tool4:"Socket.js",
         codeSrc:"https://github.com/nickbarr3160/mixElixir",
         appSrc:"",
-        videoSrc:"",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
         thumbSrc:"/drink.jpg"
     },
-
+    {
+        projHeading:"BuzzyBee",
+        projDescrip:"Buzzy Bee is a native organizer application developed with a team that fetches data from a school’s portal (mocked) and automatically adds the student’s courses to a schedule and much more... BuzzyBee is a react native mobile application only, launched on Expo Go and cannot be viewed on the web.",
+        tool1:"React.js",
+        tool2:"Firebase",
+        tool3:"Node.js",
+        tool4:"SQL",
+        codeSrc:"https://github.com/npm-i-abhay/buzzyApp",
+        appSrc:"https://youtu.be/FPFm8VoWypQ",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
+        thumbSrc:"/buzzy.jpeg"
+    },
+    
     {
         projHeading:"Kinder Kampus",
         projDescrip:"Kinder Kampus is a wordpress site that was developed for an award winning daycare centre in the Vancouver area.",
@@ -61,6 +60,18 @@ export const ProjCardData = [
         appSrc:"https://kinderkampus.ca/",
         videoSrc:"https://youtu.be/TFCRyD64VDs",
         thumbSrc:"/kkScreen.png"
+    },
+    {
+        projHeading:"Alien Game",
+        projDescrip:"This project is a mini Alien game where you move around to avoid obstacles and explosions. made using vanilla JavaScript",
+        tool1:"JavaScript",
+        tool2:"CSS",
+        tool3:"HTML",
+        tool4:"keyPress",
+        codeSrc:"https://github.com/nickbarr3160/AlienGame",
+        appSrc:"https://nickbarr3160.github.io/AlienGame/",
+        videoSrc:"https://youtu.be/TFCRyD64VDs",
+        thumbSrc:"/alienGame.png"
     }
     
 ]
@@ -137,7 +148,7 @@ export const ButtonData = [
     {
         label:"Resume",
         icon:<AiFillFilePdf/>,
-        route:'/nickBarrResume.PDF'
+        route:'/NicholasSameerBarrResume.PDF'
     },
 ]
 
