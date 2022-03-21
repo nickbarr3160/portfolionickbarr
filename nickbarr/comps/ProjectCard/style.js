@@ -35,12 +35,16 @@ export const ProjDescrip = styled.div`
 width:90%;
 height:20%;
 text-align:center;
+margin-top:1em;
 color:${props=>props.color};
 // Used to adjust font size for mobile screens
 @media only screen and (max-width: 500px) {
 font-size:3vw;
-
+margin-top:0em;
 }
+@media only screen and (min-width: 1000px) {
+    height:10%;
+    }
 `;
 
 
@@ -58,11 +62,12 @@ display:flex;
 align-items:center;
 justify-content:space-evenly;
 width:40%;
+margin-top:1em;
 @media only screen and (max-width: 400px) {
     width:60%;
 }  
-`;
 
+`;
 export const IconCont = styled.div`
 display:flex;
 align-items:center;
