@@ -26,13 +26,13 @@ export const ProjCardData = [
     
     {
         projHeading:"MixElixir",
-        projDescrip:"MixElixir is a React application developed with a team that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more... THIS PROJECT IS CURRENTLY UNDER DEVELOPMENT coming soon to a device near you...",
+        projDescrip:"MixElixir is a React application developed with a team that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more...",
         tool1:"React.js",
         tool2:"Axios",
         tool3:"Node.js",
         tool4:"Socket.js",
         codeSrc:"https://github.com/nickbarr3160/mixElixir",
-        appSrc:"",
+        appSrc:"https://mixelixir.vercel.app/",
         videoSrc:"https://youtu.be/FPFm8VoWypQ",
         thumbSrc:"/drink.jpg"
     },
