@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ButtCont = styled.button`
 background-color:${props=>props.bgcolor};
 width:7em;
+font-family: 'Poppins', sans-serif;
 border: none;
 color: ${props=>props.color};
 padding:1em;

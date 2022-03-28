@@ -13,7 +13,7 @@ export const HeroMessageData =
 export const ProjCardData = [
     {
         projHeading:"EcoHow",
-        projDescrip:"EcoHow is a React application primarily for mobile view that was developed with a team built to assess your knowledge toward your sustainability habits and how to improve upon them along with with a fun sorting game at the end.",
+        projDescrip:"EcoHow is a React application optimized for mobile view that was developed within a team to assess your knowledge toward your sustainability habits and how to improve upon them along with with a fun sorting game at the end.",
         tool1:"React.js",
         tool2:"JS",
         tool3:"Node.js",
@@ -63,7 +63,7 @@ export const ProjCardData = [
     },
     {
         projHeading:"Alien Game",
-        projDescrip:"This project is a mini Alien game where you move around to avoid obstacles and explosions. made using vanilla JavaScript",
+        projDescrip:"This project is a mini Alien game designed where you move around to avoid obstacles and explosions. made using vanilla JavaScript",
         tool1:"JavaScript",
         tool2:"CSS",
         tool3:"HTML",
