@@ -9,7 +9,7 @@ const AboutIntro = ({
     introText="Hey, my name is",
     name="Nicholas Barr",
     phrase="I build things for the web",
-    introPar="I’m a Front-End developer specializing in extraordinary digital experiences. Second to being a developer I also sometimes create graphics and visuals. I am currently seeking an internship opportunity to further hone my skills in the development space."
+    introPar="I’m a Front-End developer specializing in extraordinary digital experiences. Second to being a developer I also sometimes create graphics and visuals."
 }) => {
     const {theme} = useTheme();
     return <AboutCont>
