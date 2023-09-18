@@ -8,6 +8,10 @@ height:20vh;
 width:100%;
 padding-left:1em;
 padding-right:1em;
+position:fixed;
+background:${props=>props.bgColor};
+transition: ${props => props.transitionEnabled ? 'background-color 0.3s ease' : 'none'};
+box-shadow: ${props => props.boxShadow || "none"}; 
 `;
 
 export const Logo = styled.div`
