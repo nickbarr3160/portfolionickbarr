@@ -1,20 +1,27 @@
+import React, { useCallback } from 'react';
 import NavBar from '../comps/NavBar'
 import ProjCard from '../comps/ProjectCard';
 import ToolStackGraphic from '../comps/ToolStackGraphic';
 import Header from '../comps/Header';
 import HeroMessage from '../comps/HeroMessage'
 import { ProjCardData, StackData, ButtonData } from '../data/data';
-import {useRouter} from 'next/router';
-import { MainCont, ProjCardCont, DesignProjCont, ToolStackCont, HeroMessageCont, ButtonCont } from '../styles/styles';
+import { 
+  MainCont, 
+  ProjCardCont, 
+  ToolStackCont, 
+  HeroMessageCont, 
+  StyledParticlesCont 
+} from '../styles/styles';
 import ScrollButton from '../comps/ScrollToTop'
-import Button from '../comps/Button'
 import Footer from '../comps/Footer'
 import {useTheme} from '../utils/provider'
 import {BsFillMoonStarsFill } from 'react-icons/bs';
 import {FaSun} from 'react-icons/fa'
-import { toggle_theme } from "../utils/variables";
-import DesignProj from '../comps/DesignProjects';
-import { HashLink as Link } from 'react-router-hash-link';
+import { toggle_theme, global_theme } from "../utils/variables";
+import Particles from 'react-tsparticles';
+import { loadSlim } from 'tsparticles-slim'; 
+import { getParticlesOptions } from '../data/particlesConfig';
+
 
 //data used for component data mapping
 var cardData = ProjCardData
@@ -25,15 +32,38 @@ var buttonData = ButtonData
 export default function Nick() {
     
   const {theme, setTheme} = useTheme()
-  const router = useRouter();
+
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    await loadSlim(engine); 
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    console.log(container);
+  }, []);
+
 
     return (
     <MainCont>
+        {theme === 'default' && (
+        <StyledParticlesCont>
+          <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          className="particles"
+          options={getParticlesOptions(theme, global_theme)}
+          />
+        </StyledParticlesCont>  
+        )}
         <NavBar 
+        bgColor={global_theme[theme].body}
         anchor="#anchor"
         themeToggle={()=>setTheme(
         theme=== 'light'?'default':'light')}
         icon={theme==='light'?<BsFillMoonStarsFill color={toggle_theme[theme].icon} size="1.5em"/>:<FaSun color={toggle_theme[theme].icon} size="1.5em"/>}
+        initialBgColor='pink'
+        scrolledBgColor='pink'
         />
         
         <HeroMessageCont>
@@ -81,7 +111,7 @@ export default function Nick() {
        
         <ScrollButton/>
         
-          <Footer footerText='Nicholas Sameer Barr 2022'/>
+          <Footer footerText='Nicholas Sameer Barr 2023'/>
         
     </MainCont>
     )

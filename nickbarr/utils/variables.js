@@ -1,25 +1,29 @@
 //color variables for easier use 
 var navy = '#030217'
-var offWhite = '#f5f6f7'
+var offWhite = '#f5f1ed'
 var white='white'
 var violet = "#bdbddd"
 var purple = '#807ae8'
 var altPurple = ' rgb(22 28 41/33%);'
 var grey = '#222'
 var red ='#ad0202'
+var turq ="#21AAB5"
 var hoverPurple = '#504aba'
-var hoverRed ='#6b0404'
+var hoverturq ='#0e8f9e'
 var toolTagPurple = "rgb(18 17 49/44%);"
-var toolTagRed = "#fae8e8"
+var toolTagturq = "#fae8e8"
 
 //body theme
 export const global_theme = {
     default:{
-        body:navy
+        body:navy,
+        particleBg: navy, 
+        particleColor: purple,
+        particleLink:purple
     },
 
     light:{
-        body:offWhite
+        body:offWhite,
     }
 } 
 
@@ -45,8 +49,8 @@ export const HeroMessage_theme = {
 
     light:{
         heroIntro:grey,
-        heroIntrofName:red,
-        heroIntrolName:red,
+        heroIntrofName:turq,
+        heroIntrolName:turq,
         heroIntroDescrip:grey
     },
 }
@@ -61,9 +65,9 @@ export const button_theme = {
     },
 
     light:{
-        buttbgColor:red,
+        buttbgColor:turq,
         buttColor:white,
-        buttHover:hoverRed
+        buttHover:hoverturq
     },
 }
 
@@ -72,15 +76,19 @@ export const NavBar_theme = {
     default:{
         logo:purple,
         logoHover:hoverPurple,
-        links:violet,
+        links:purple,
         linkHover:purple,
+        initialBg:'transparent',
+        scrollBg:navy
     },
 
     light:{
-        logo:red,
-        logoHover:hoverRed,
+        logo:turq,
+        logoHover:hoverturq,
         links:grey,
-        linkHover:red,
+        linkHover:turq,
+        initialBg:offWhite,
+        scrollBg:offWhite
     },
 }
 
@@ -93,7 +101,7 @@ export const Header_theme = {
 
     light:{
         color:grey,
-        underline:red
+        underline:turq
     },
 }
 
@@ -110,8 +118,8 @@ export const ProjCard_theme = {
     light:{
         cardbg:white,
         color:grey,
-        toolbgColor:toolTagRed,
-        toolColor:red,
+        toolbgColor:toolTagturq,
+        toolColor:turq,
     }
 
 }
@@ -128,7 +136,7 @@ export const ToolStack_theme = {
     light:{
         cardbg:white,
         color:grey,
-        hovbgcolor:red,
+        hovbgcolor:turq,
         hovcolor:white
     }
 
@@ -156,7 +164,7 @@ export const ScrollTop_theme = {
     },
     
     light:{
-        bgcolor:red,
+        bgcolor:turq,
     }
 }
 
@@ -169,9 +177,9 @@ export const About_Intro_theme = {
         parCol:violet
     },
     light:{
-        heading1Col:red,
+        heading1Col:turq,
         heading2Col:grey,
-        heading3Col:red,
+        heading3Col:turq,
         parCol:grey
     }
 }
@@ -183,7 +191,7 @@ export const About_Me_theme = {
         parCol:violet
     },
     light:{
-        headingCol:red,
+        headingCol:turq,
         parCol:grey
     }
 }
