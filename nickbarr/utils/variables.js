@@ -1,6 +1,6 @@
 //color variables for easier use 
 var navy = '#030217'
-var offWhite = '#f5f1ed'
+var offWhite = '#f5f6f7'
 var white='white'
 var violet = "#bdbddd"
 var purple = '#807ae8'
