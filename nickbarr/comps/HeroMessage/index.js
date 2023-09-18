@@ -33,7 +33,7 @@ const HeroMessage = ({
         <IntroDescrip color={HeroMessage_theme[theme].heroIntroDescrip}>
             {descrip}
             <ButtonCont>
-                <Button label="GitHub" icon={<AiFillGithub/>} onButClick={()=>router.push("https://github.com/nickbarr3160")}/>
+                <Button label="GitHub" icon={<AiFillGithub/>} onButClick={() => window.open("https://github.com/nickbarr3160", "_blank")}/>
             </ButtonCont>
         </IntroDescrip>
 

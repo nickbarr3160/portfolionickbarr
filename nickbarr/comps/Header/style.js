@@ -7,9 +7,10 @@ justify-content:space-evenly;
 align-items:center;
 text-align:center;
 width:10em;
-height:25vh;
+height:200px;
 font-size:2em;
 flex-wrap:nowrap;
+margin:70px 0 30px 0;
 color:${props=>props.color};
 `;
 

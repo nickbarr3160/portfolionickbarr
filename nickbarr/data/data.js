@@ -5,7 +5,7 @@ export const HeroMessageData =
     IntroMessage:"I'm",
     IntroMessagefName:"Nicholas",
     IntroMessagelName:"Barr",
-    IntroDescrip:"I am a Front-End Developer from Vancouver, British Columbia. I enjoy writing clean code, building beautiful user interfaces and graphics along with providing solutions to problems in the tech space."
+    IntroDescrip:"I'm a Vancouver-based Front-End Developer with a passion for crafting elegant code and designing visually stunning user interfaces. My drive lies in leveraging technology to solve complex problems and create engaging digital experiences."
     
 }
 

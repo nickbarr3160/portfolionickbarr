@@ -12,6 +12,7 @@ margin:1em;
 @media only screen and (max-width: 950px) {
     flex-direction:column;
 }
+margin:20em 0 0em 0;
 `;
 
 export const IntroMessage = styled.div`
