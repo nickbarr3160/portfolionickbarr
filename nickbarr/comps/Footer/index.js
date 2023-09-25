@@ -20,7 +20,6 @@ footerText=""
                     {buttonData.map((o,i)=>{
                     return <Button
                     key={i}
-                    label={o.label}
                     icon={o.icon}
                     onButClick={()=>{window.open(`${o.route}`, '_blank')}}
                     />

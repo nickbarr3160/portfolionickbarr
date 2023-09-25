@@ -1,21 +1,19 @@
 import styled from 'styled-components'
 
-export const ButtCont = styled.button`
-background-color:${props=>props.bgcolor};
-width:7em;
-font-family: 'Poppins', sans-serif;
-border: none;
+export const ButtCont = styled.div`
 color: ${props=>props.color};
-padding:1em;
 text-align: center;
 display: flex;
-align-items:center;
-justify-content:space-evenly;
-font-size: 16px;
+align-items:flex-start;
+justify-content:center;
+font-size: 60px;
 transition-duration: 0.4s;
 cursor: pointer;
-border-radius:30px;
 &:hover{
-    background-color: ${props=>props.hovColor}; 
+    color: ${props=>props.hovColor}; 
 }
+@media only screen and (min-width: 400px) {
+    margin:0 20px 0 0;
+}  
+
 `;

@@ -9,10 +9,10 @@ align-items:center;
 width:100%;
 height:50vh;
 margin:1em;
+margin:20em 0 0em 0;
 @media only screen and (max-width: 950px) {
     flex-direction:column;
 }
-margin:20em 0 0em 0;
 `;
 
 export const IntroMessage = styled.div`
@@ -24,6 +24,13 @@ width:50%;
 height:100%;
 color:${props=>props.color};
 @media only screen and (max-width: 600px) {
+    width:80%;
+    align-items:flex-start;
+}
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+    justify-content:flex-start;
+    height:auto;
+    flex-direction:row;
     width:90%;
 }   
 `;
@@ -46,7 +53,11 @@ animation: 1.5s ${fadeAnimation};
     width:90%;
     font-size:3em;
 } 
-
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+    font-size:4em;
+    width:auto;
+    margin-right:15px;
+}  
 `;
 
 export const IntroDescrip = styled.div`
@@ -64,12 +75,17 @@ padding-right:1em;
 }   
 @media only screen and (min-width: 1300px) {
     font-size:25px;
-}   
+}
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+    width:90%;
+    justify-content:center;
+    height:60%;
+} 
 `;
 
 export const ButtonCont = styled.div`
 display:flex;
-margin-top:2em;
 width:100%;
+padding:1em 0 0em 0;
 justify-content:flex-start;
 `;

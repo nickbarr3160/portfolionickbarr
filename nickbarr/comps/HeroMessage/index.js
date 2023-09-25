@@ -1,7 +1,7 @@
 import React from "react";
 import {HeroCont, IntroMessage, IntroDescrip, IntroMessageName, ButtonCont} from './style'
 import Button from '../Button'
-import { HeroMessageData } from "../../data/data";
+import { HeroMessageData, ButtonData } from "../../data/data";
 import {AiFillGithub} from 'react-icons/ai';
 import { HeroMessage_theme } from "../../utils/variables";
 import {useTheme} from '../../utils/provider'
@@ -14,8 +14,8 @@ const HeroMessage = ({
     fname=HeroMessageData.IntroMessagefName,
     lname=HeroMessageData.IntroMessagelName,
 }) => {
+    var buttonData=ButtonData
     const {theme} = useTheme();
-    const router = useRouter();
     return <HeroCont>
         
         <IntroMessage >  
@@ -33,8 +33,14 @@ const HeroMessage = ({
         <IntroDescrip color={HeroMessage_theme[theme].heroIntroDescrip}>
             {descrip}
             <ButtonCont>
-                <Button label="GitHub" icon={<AiFillGithub/>} onButClick={() => window.open("https://github.com/nickbarr3160", "_blank")}/>
-            </ButtonCont>
+                    {buttonData.map((o,i)=>{
+                    return <Button
+                    key={i}
+                    icon={o.icon}
+                    onButClick={()=>{window.open(`${o.route}`, '_blank')}}
+                    />
+                    })}     
+                </ButtonCont>      
         </IntroDescrip>
 
     </HeroCont>
