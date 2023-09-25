@@ -9,6 +9,7 @@ width:100%;
 padding-left:1em;
 padding-right:1em;
 position:fixed;
+z-index:1000;
 background:${props=>props.bgColor};
 transition: ${props => props.transitionEnabled ? 'background-color 0.3s ease' : 'none'};
 box-shadow: ${props => props.boxShadow || "none"}; 
