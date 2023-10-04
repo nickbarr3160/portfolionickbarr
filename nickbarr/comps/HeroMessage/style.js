@@ -7,12 +7,16 @@ display:flex;
 justify-content:center;
 align-items:center;
 width:100%;
-height:50vh;
-margin:1em;
 margin:20em 0 0em 0;
 @media only screen and (max-width: 1100px) {
     flex-direction:column;
 }
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+    padding:0 64px 0 64px;
+}
+@media only screen and (max-width: 700px) {
+    padding:0 0 0 0;
+    }
 `;
 
 export const IntroMessage = styled.div`
@@ -34,7 +38,10 @@ color:${props=>props.color};
     width:90%;
 }
 margin-right:15px;
-}   
+}
+@media only screen and (max-width: 700px) {
+    height:auto;
+    }   
 `;
 
 // variable storing the animation for the intro name
@@ -57,9 +64,13 @@ animation: 1.5s ${fadeAnimation};
 } 
 @media only screen and (min-width: 600px) and (max-width: 1100px) {
     font-size:4em;
+    margin-bottom:0.2em;
     width:auto;
     margin-right:15px;
-}  
+} 
+@media only screen and (max-height: 700px) and (min-width: 600px) and (max-width: 850px) {
+    margin-bottom:0.5em;
+    } 
 `;
 
 export const IntroDescrip = styled.div`

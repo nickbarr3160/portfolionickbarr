@@ -2,10 +2,9 @@ import React from "react";
 import {HeroCont, IntroMessage, IntroDescrip, IntroMessageName, ButtonCont} from './style'
 import Button from '../Button'
 import { HeroMessageData, ButtonData } from "../../data/data";
-import {AiFillGithub} from 'react-icons/ai';
 import { HeroMessage_theme } from "../../utils/variables";
 import {useTheme} from '../../utils/provider'
-import {useRouter} from 'next/router';
+
 
 
 const HeroMessage = ({
@@ -40,7 +39,7 @@ const HeroMessage = ({
                     onButClick={()=>{window.open(`${o.route}`, '_blank')}}
                     />
                     })}     
-                </ButtonCont>      
+            </ButtonCont>      
         </IntroDescrip>
 
     </HeroCont>
