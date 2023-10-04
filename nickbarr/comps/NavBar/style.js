@@ -24,6 +24,9 @@ color:${props=>props.color};
 color: ${props=>props.hovColor}; 
 cursor:pointer;
 }
+@media only screen and (max-width: 768px) {
+    margin:0;
+    }
 @media only screen and (max-width: 600px) {
     margin:0;
     font-size:2.8em;
@@ -35,15 +38,26 @@ display:flex;
 font-size:1.3em;
 justify-content:space-evenly;
 align-items:center;
-width:30%;
+width:40%;
 height:100%;
 color:${props=>props.color};
 // Used to adjust width and font size for mobile screens
-@media only screen and (max-width: 800px) {
-width:75%;
-font-size:1.1em;
-}
-
+@media (max-width: 768px) {
+    background-color:${props=>props.bgcolor};
+    display: flex;
+    flex-direction: column;
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed;
+    top: ${props => (props.open ? '0' : '-100vh')}; // Set to '0' to show, '-100vh' to hide above the screen
+    left: 0;
+    overflow-y: auto;
+    transition: top 0.5s ease-in-out;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    z-index: 2000;
+    padding:5em 0 15em 1.5em;
+    font-size:30px;
 `;
 
 export const IconCont= styled.div`
@@ -57,4 +71,41 @@ export const NavLink = styled.a`
 &:hover{
     color:${props=>props.color};
 }
+`;
+
+
+export const MenuIcon = styled.div`
+z-index: 2001;
+cursor: pointer;
+@media (min-width: 769px) {
+        display: none;
+}
+`;
+
+export const Hamburger = styled.div`
+    width: 30px;
+    height: 3px;
+    background-color: ${props=>props.bgcolor};
+    position: relative;
+    transform: ${props => (props.open ? "rotate(45deg)" : "rotate(0)")};
+    transition: transform 0.3s ease-in-out;
+
+    &:before, &:after {
+        content: "";
+        background-color:  ${props=>props.bgcolor};
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    &:before {
+        top: ${props => (props.open ? "0" : "-8px")};
+        transform: ${props => (props.open ? "rotate(-90deg)" : "rotate(0)")};
+    }
+
+    &:after {
+        bottom: ${props => (props.open ? "0" : "-8px")};
+        opacity: ${props => (props.open ? "0" : "1")};
+    }
 `;
