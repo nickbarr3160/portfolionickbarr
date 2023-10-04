@@ -1,3 +1,5 @@
+import { RiPictureInPictureLine } from "react-icons/ri"
+
 //color variables for easier use 
 var navy = '#030217'
 var offWhite = '#f5f6f7'
@@ -5,13 +7,9 @@ var white='white'
 var violet = "#bdbddd"
 var purple = '#807ae8'
 var altPurple = ' rgb(22 28 41/33%);'
-var grey = '#222'
-var red ='#ad0202'
-var turq ="#21AAB5"
 var hoverPurple = '#504aba'
-var hoverturq ='#0e8f9e'
 var toolTagPurple = "rgb(18 17 49/44%);"
-var toolTagturq = "#fae8e8"
+var hoverGrey = "#F0F0F0"
 
 //body theme
 export const global_theme = {
@@ -34,7 +32,7 @@ export const toggle_theme = {
     },
 
     light:{
-        icon:grey
+        icon:purple
     }
 }
 
@@ -48,10 +46,10 @@ export const HeroMessage_theme = {
     },
 
     light:{
-        heroIntro:grey,
-        heroIntrofName:turq,
-        heroIntrolName:turq,
-        heroIntroDescrip:grey
+        heroIntro:navy,
+        heroIntrofName:violet,
+        heroIntrolName:violet,
+        heroIntroDescrip:navy
     },
 }
 
@@ -65,9 +63,9 @@ export const button_theme = {
     },
 
     light:{
-        buttbgColor:turq,
+        buttbgColor:violet,
         buttColor:white,
-        buttHover:hoverturq
+        buttHover:hoverPurple
     },
 }
 
@@ -76,19 +74,23 @@ export const NavBar_theme = {
     default:{
         logo:purple,
         logoHover:hoverPurple,
-        links:purple,
+        links:violet,
         linkHover:purple,
         initialBg:'transparent',
-        scrollBg:navy
+        scrollBg:navy,
+        hamburgerLines:purple,
+        hamburgerMenuBg:navy
     },
 
     light:{
-        logo:turq,
-        logoHover:hoverturq,
-        links:grey,
-        linkHover:turq,
+        logo:violet,
+        logoHover:hoverPurple,
+        links:navy,
+        linkHover:purple,
         initialBg:offWhite,
-        scrollBg:offWhite
+        scrollBg:offWhite,
+        hamburgerLines:purple,
+        hamburgerMenuBg:offWhite
     },
 }
 
@@ -100,26 +102,34 @@ export const Header_theme = {
     },
 
     light:{
-        color:grey,
-        underline:turq
+        color:navy,
+        underline:purple
     },
 }
 
 // ProjectCard comp Themes
-
 export const ProjCard_theme = {
     default:{
         cardbg:altPurple,
         color:violet,
         toolbgColor:toolTagPurple,
-        toolColor:purple
+        toolColor:purple,
+        iconbgcol:'',
+        iconcolor:purple,
+        iconhovbg:purple,
+        iconbrdrColor:'',
+        iconhovcolor:white
     },
     
     light:{
         cardbg:white,
-        color:grey,
-        toolbgColor:toolTagturq,
-        toolColor:turq,
+        color:navy,
+        toolbgColor:hoverGrey,
+        toolColor:purple,
+        iconbgcol:violet,
+        iconcolor:white,
+        iconhovbg:purple,
+        iconbrdrColor:violet
     }
 
 }
@@ -135,8 +145,8 @@ export const ToolStack_theme = {
     
     light:{
         cardbg:white,
-        color:grey,
-        hovbgcolor:turq,
+        color:navy,
+        hovbgcolor:hoverGrey,
         hovcolor:white
     }
 
@@ -152,8 +162,8 @@ export const Footer_theme = {
     },
     
     light:{
-        bgcolor:white,
-        color:grey
+        bgcolor:offWhite,
+        color:navy
     }
 }
 
@@ -164,7 +174,7 @@ export const ScrollTop_theme = {
     },
     
     light:{
-        bgcolor:turq,
+        bgcolor:purple,
     }
 }
 
@@ -174,13 +184,13 @@ export const About_Intro_theme = {
         heading1Col:purple,
         heading2Col:violet,
         heading3Col:purple,
-        parCol:violet
+        parCol:violet,
     },
     light:{
-        heading1Col:turq,
-        heading2Col:grey,
-        heading3Col:turq,
-        parCol:grey
+        heading1Col:purple,
+        heading2Col:violet,
+        heading3Col:navy,
+        parCol:navy,
     }
 }
 
@@ -188,10 +198,24 @@ export const About_Intro_theme = {
 export const About_Me_theme = {
     default:{
         headingCol:purple,
-        parCol:violet
+        parCol:violet,
+        bgCol:altPurple
     },
     light:{
-        headingCol:turq,
-        parCol:grey
+        headingCol:violet,
+        parCol:navy,
+        bgCol:white
+    }
+}
+
+//global highlight colour
+export const Highlight_theme = {
+    default:{
+        bg:purple,
+        color:white
+    },
+    light:{
+        bg:violet,
+        color:white
     }
 }
