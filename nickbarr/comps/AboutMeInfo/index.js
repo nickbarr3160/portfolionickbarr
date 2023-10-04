@@ -67,7 +67,7 @@ const AboutMe = ({
                             >
                                 <Tween
                                     from={{
-                                        x: order === 0 ? '-300px' : '300px',
+                                        x: order === 0 ? '-1100px' : '1100px',
                                         opacity: 0,
                                         ease: 'power1.inOut'
                                     }}
