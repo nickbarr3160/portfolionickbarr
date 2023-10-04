@@ -18,8 +18,9 @@ margin:20em 0 0em 0;
     padding:0 0 0 0;
     }
 @media only screen and (max-width: 400px) {
-    padding:0 0 30px 0;
+    maergin:25em 0 0 0;
 }
+
 `;
 
 export const IntroMessage = styled.div`
@@ -87,6 +88,7 @@ color:${props=>props.color};
 padding-right:1em;
 @media only screen and (max-width: 600px) {
     width:80%;
+    height:auto;
     padding-right:0em;
 }   
 @media only screen and (min-width: 1300px) {
