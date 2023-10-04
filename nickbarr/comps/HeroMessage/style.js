@@ -17,6 +17,9 @@ margin:20em 0 0em 0;
 @media only screen and (max-width: 700px) {
     padding:0 0 0 0;
     }
+@media only screen and (max-width: 400px) {
+    padding:0 0 30px 0;
+}
 `;
 
 export const IntroMessage = styled.div`
