@@ -1,88 +1,77 @@
 import styled from 'styled-components'
 
-
 export const ProjCardCont = styled.div`
-width 45%;
-height:120vh;
-display:flex;
-flex-direction:column;
-justify-content:space-evenly;
-align-items:center;
-background-color:${props=>props.bgcolor};
-margin:1em;
-box-shadow:0 2px 4px rgb(0 0 0/20%);;
-border-radius:1em;
-padding:1em;
-@media only screen and (max-width: 700px) {
-    height:90vh;
-    width:85%;
-    }  
-`;
-export const ProjHeading = styled.div`
-font-size:3vw;
-color:${props=>props.color};
-width:60%;
-display:flex;
-justify-content:center;
-text-align:center;
-// Used to adjust font size for mobile screens
-@media only screen and (max-width: 500px) {
-        font-size:6vw;
-        }    
+  width: 100%;
+  height: 600px;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: ${props => props.bgcolor};
+  margin: 1em;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;  // <-- Added this
 `;
 
-export const ProjDescrip = styled.div`
-width:90%;
-height:20%;
-text-align:center;
-margin-top:1em;
-font-size:14px;
-color:${props=>props.color};
-// Used to adjust font size for mobile screens
-@media only screen and (max-width: 500px) {
-font-size:3vw;
-margin-top:0em;
-}
-@media only screen and (min-width: 1500px) {
-    height:10%;
-    font-size:20px;
-    }
+export const ImageContainer = styled.div`
+  width: 100%;
+  position: relative;
+  overflow:hidden;
+  width: 100%;
+  height: 40%;
+  background:#ebf4fe;
 `;
 
+
+export const ProjHeading = styled.h2`
+  font-size: 1.5em;
+  color: ${props => props.color};
+  text-align: center;
+  height: 60px;
+`;
+
+export const ProjDescrip = styled.p` 
+  text-align: center;
+  padding:0 1em 0 1em;
+  font-size: 0.9em;
+  color: ${props => props.color};
+  margin:-3.5em 0 3em 0;
+`;
 
 export const ToolTagCont = styled.div`
-width 90%;
-display:flex;
-justify-content:space-evenly;
-align-items:center;
-flex-wrap:wrap;
+  display: flex;
+  width:85%;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-top: -1.5em;
 `;
-
 
 export const Icons = styled.div`
-display:flex;
-align-items:center;
-justify-content:space-evenly;
-width:40%;
-margin-top:1em;
-@media only screen and (max-width: 400px) {
-    width:60%;
-}  
-
+  display: flex;
+  justify-content: space-between;
+  padding:1em;
+  width: 100%;
+  max-width: 150px; 
+  margin-bottom:2em;
 `;
+
 export const IconCont = styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
-width:3em;
-height:3em;
-border-radius:50%;
-border:2px solid ${props=>props.brdrColor};
-color:${props=>props.color};
-cursor: pointer;
-&:hover{
-    background-color: ${props=>props.bgColor};
-    color:${props=>props.hovcolor};
-}
-`;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid ${props => props.brdrColor};
+  background-color: ${props => props.bgColor};
+  color: ${props => props.color};
+  cursor: pointer;
+  transition: all 0.3s ease; 
 
+  &:hover {
+    background-color: ${props => props.hovBgColor};
+    color: ${props => props.hovcolor};
+  }
+`;
