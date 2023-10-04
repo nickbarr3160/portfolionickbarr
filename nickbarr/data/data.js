@@ -1,44 +1,91 @@
 
 //Data for the HeroMessage components
 export const HeroMessageData = 
-{
-    IntroMessage:"I'm",
-    IntroMessagefName:"Nicholas",
-    IntroMessagelName:"Barr",
-    IntroDescrip:"I'm a Vancouver-based Front-End Developer with a passion for crafting elegant code and designing visually stunning user interfaces. My drive lies in leveraging technology to solve complex problems and create engaging digital experiences."
-    
-}
+    {
+        IntroMessage:"I'm",
+        IntroMessagefName:"Nicholas",
+        IntroMessagelName:"Barr",
+        IntroDescrip:"I'm a Vancouver-based Front-End Developer with a passion for crafting elegant code and designing visually stunning user interfaces. My drive lies in leveraging technology to solve complex problems and create engaging digital experiences."
+        
+    }
 
 // All data for Project Card component mapping
 export const ProjCardData = [
     {
-        projHeading:"EcoHow",
-        projDescrip:"EcoHow is a React application optimized for mobile view that was developed within a team to assess your knowledge toward your sustainability habits and how to improve upon them along with with a fun sorting game at the end.",
+        projHeading:"Witness Blanket",
+        projDescrip:"Enhanced the Witness Blanket's digital experience using React libraries, animating poignant Survivor stories. Explore Canada's dark residential school history interactively.",
         tool1:"React.js",
-        tool2:"JS",
+        tool2:"gsap",
+        tool3:"css",
+        tool4:"scrollmagic",
+        codeSrc:"",
+        appSrc:"https://witnessblanket.ca/stories",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
+        thumbSrc:"/witnessBlanket.jpg"
+    },
+    {
+        projHeading:"Nest Mortgage",
+        projDescrip:"Revamped Nest Mortgage's homepage with Duda, introducing key features and UI upgrades for an optimized user experience. Elevate your mortgage journey today!",
+        tool1:"Duda",
+        tool2:"",
+        tool3:"",
+        tool4:"",
+        codeSrc:"",
+        appSrc:"https://www.nestmortgage.co/",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
+        thumbSrc:"/nest-logo.svg"
+    },
+    {
+        projHeading:"Blog Platform",
+        projDescrip:"Explore captivating stories on Mellenger Interactive's next-gen blog platform! Built with React & TypeScript front-end, plus a powerful Drupal backend. Dive into curated articles today!",
+        tool1:"React.js",
+        tool2:"Drupal",
+        tool3:"TypeScript",
+        tool4:"axios",
+        codeSrc:"https://mellenger.com/blog",
+        appSrc:"https://mellenger.com/blog",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
+        thumbSrc:"/blog.jpg"
+    },
+    {
+        projHeading:"Myeflat",
+        projDescrip:"Crafted with Wix to fuel your travel passion, MyeFlat transforms mid to long-term stays in enchanting cities. Explore a world where every flat echoes your needs and journey!",
+        tool1:"Wix",
+        tool2:"ES6",
+        tool3:"Velo",
+        tool4:"JavaScript",
+        codeSrc:"",
+        appSrc:"https://www.myeflat.com/",
+        videoSrc:"https://youtu.be/FPFm8VoWypQ",
+        thumbSrc:"/myeflat.webp"
+    },
+    {
+        projHeading:"Kinder Kampus",
+        projDescrip:"Discover award-winning childcare at Kinder Kampus! Built on WordPress, this vibrant site offers a virtual tour of Vancouver's top daycare center. Explore now!",
+        tool1:"WordPress",
+        tool2:"CSS",
+        tool3:"Divi",
+        tool4:"GoDaddy",
+        codeSrc:"https://kinderkampus.ca/",
+        appSrc:"https://kinderkampus.ca/",
+        videoSrc:"https://youtu.be/TFCRyD64VDs",
+        thumbSrc:"/kk.jpg"
+    },
+    {
+        projHeading:"EcoHow",
+        projDescrip:"Unlock the secrets to a greener life with EcoHow! Crafted by a skilled team, this mobile-optimized React app evaluates your eco-habits and amps them up with a captivating sorting game.",
+        tool1:"React.js",
+        tool2:"JavaScript",
         tool3:"Node.js",
         tool4:"CSS",
         codeSrc:"https://github.com/npm-i-abhay/final_EcoHow_repo",
         appSrc:"https://final-eco-how-repo.vercel.app/home",
         videoSrc:"https://youtu.be/FPFm8VoWypQ",
         thumbSrc:"/recycle.jpg"
-    },
-    
-    {
-        projHeading:"MixElixir",
-        projDescrip:"MixElixir is a React application developed with a team that allows users to get over the dilemma of what cocktail they can make based on the ingredients they have on hand and much more...",
-        tool1:"React.js",
-        tool2:"Axios",
-        tool3:"Node.js",
-        tool4:"Socket.js",
-        codeSrc:"https://github.com/nickbarr3160/mixElixir",
-        appSrc:"https://mixelixir.vercel.app/",
-        videoSrc:"https://youtu.be/FPFm8VoWypQ",
-        thumbSrc:"/drink.jpg"
-    },
+    },    
     {
         projHeading:"BuzzyBee",
-        projDescrip:"Buzzy Bee is a React native application developed with a team that fetches data from a school’s portal (mocked) and automatically adds the student’s courses to a schedule and much more... It is only launched on Expo Go and cannot be viewed on the web.",
+        projDescrip:"Simplify student life with Buzzy Bee! Engineered by an adept team, this React Native app auto-syncs with a mock school portal to manage your courses. Get it exclusively on Expo Go!",
         tool1:"React.js",
         tool2:"Firebase",
         tool3:"Node.js",
@@ -48,22 +95,9 @@ export const ProjCardData = [
         videoSrc:"https://youtu.be/FPFm8VoWypQ",
         thumbSrc:"/buzzy.jpeg"
     },
-    
-    {
-        projHeading:"Kinder Kampus",
-        projDescrip:"Kinder Kampus is a wordpress site that was developed for an award winning daycare centre in the Vancouver area.",
-        tool1:"WordPress",
-        tool2:"CSS",
-        tool3:"Divi",
-        tool4:"GoDaddy",
-        codeSrc:"https://kinderkampus.ca/",
-        appSrc:"https://kinderkampus.ca/",
-        videoSrc:"https://youtu.be/TFCRyD64VDs",
-        thumbSrc:"/kkScreen.png"
-    },
     {
         projHeading:"Alien Game",
-        projDescrip:"This project is a mini Alien game designed where you move around to avoid obstacles and explosions. made using vanilla JavaScript",
+        projDescrip:"Navigate peril and dodge doom in Alien Adventure! Created in vanilla JavaScript, this thrilling mini-game has you eluding obstacles and evading explosions for the ultimate survival quest!",
         tool1:"JavaScript",
         tool2:"CSS",
         tool3:"HTML",
@@ -77,12 +111,10 @@ export const ProjCardData = [
 ]
 
 // Data for Tool Stack Graphics
-import {MdLaunch} from 'react-icons/md';
 import {AiFillGithub, AiFillHtml5} from 'react-icons/ai';
-import {DiCss3} from 'react-icons/di';
-import {FaReact, FaNodeJs, FaGitAlt} from 'react-icons/fa'
-import {SiJavascript, SiMongodb, SiExpress, SiJquery} from 'react-icons/si'
-
+import {DiCss3, DiDrupal} from 'react-icons/di';
+import {FaReact, FaNodeJs, FaGitAlt, FaWix, FaWordpressSimple} from 'react-icons/fa'
+import {SiJavascript} from 'react-icons/si'
 export const StackData = [
     {
         toolLabel:"HTML",
@@ -93,8 +125,20 @@ export const StackData = [
         toolIcon:<DiCss3 size="5em" color="#3d8fc6"/>
     },
     {
+        toolLabel:"Drupal",
+        toolIcon:<DiDrupal size="5em" color="#0678BE"/>
+    },
+    {
+        toolLabel:"Wordpress",
+        toolIcon:<FaWordpressSimple size="5em" color="black"/>
+    },
+    {
         toolLabel:"React.js",
         toolIcon:<FaReact size="5em" color="#61dafb" />
+    },
+    {
+        toolLabel:"Wix",
+        toolIcon:<FaWix size="5em" color="black" />
     },
     {
         toolLabel:"JavaScript",
@@ -107,21 +151,7 @@ export const StackData = [
     {
         toolLabel:"Git",
         toolIcon:<FaGitAlt size="5em" color="#f34f29"/>
-    },
-    {
-        toolLabel:"MongoDB",
-        toolIcon:<SiMongodb size="5em" color="#4faa41"/>
-    },
-    {
-        toolLabel:"Express.js",
-        toolIcon:<SiExpress size="5em" color="#444"/>
-    },
-
-    {
-        toolLabel:"JQuery",
-        toolIcon:<SiJquery size="5em" color="#0769ad"/>
-    },
-
+    }
 ]
 
 //data for get in touch buttons
@@ -188,14 +218,16 @@ export const imgData = [
 
   export const AboutMeData = [
     {
-    text:"What’s up! I’m Nick and I enjoy creating things that live in the internet world. My interest in web development started back in 2018 when I enrolled in Computer Science at the University of Western Ontario. There I learned the valuable skills of storing information in databases, sending data over networks, and providing new solutions to cyber security issues. Turns out this was a good fit for me although shackled my visual creativity as I am also a designer of graphics and much more second to being a developer. Fast forward to today I have had the privilege of completing the Digital Design and Development program at the British Columbia Institute of Technology. There I learned to work within a team to design and develop web and mobile applications.",
-    imgSrc:'/nicholasbarr.png',
-    heading:"My Experience"
+    text:"What's Up! I’m Nick, a Front-End Developer passionate about delivering exceptional digital experiences. I began my journey in 2018, studying Computer Science at the University of Western Ontario and later honed my skills in web and mobile application design and development at the British Columbia Institute of Technology. I spent nearly two years at a web agency based in Vancouver, contributing to a variety of projects and specializing in security and maintenance for Drupal and WordPress sites, alongside developing with React. Beyond Mellenger, I’ve independently crafted bespoke solutions for a diverse clientele, always striving to merge innovative development strategies with visually striking designs to redefine the essence of online interactions.",
+    imgSrc:'/nick.jpg',
+    heading:"My Experience",
+    order:0
     },
     {
-        text:"When I am not working, I love to keep active with activities such as Hockey, Skiing and much more. I have played Hockey all my life and have unfortunately had the privilege of being a die-hard Vancouver Canucks fan over the past 20 years. My other passion is music as I have played Guitar and Piano for 15 years and continue to pursue new musical sounds and artists.",
-        imgSrc:'/nickbarrHockey.jpg',
-        heading:"Outside the office"
-        }
+    text:"When I’m not diving into code, you can usually find me staying active with hockey, skiing, and boxing, or strategizing the best lineup for my fantasy football team. I’ve been a lifelong hockey enthusiast and, for better or for worse, a Vancouver Canucks fan for the past 20 years. Off the sports field, music is my go-to; I’ve been playing the guitar and piano for 15 years, always exploring new sounds and discovering new artists.",
+    imgSrc:'/nickbarrHockey.jpg',
+    heading:"Outside the office",
+    order:-1
+    }
 
   ]
