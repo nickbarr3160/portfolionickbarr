@@ -1,23 +1,32 @@
 import React from "react";
-import { AboutCont, IntroText, HeadingCont, IntroPar } from "./style";
+import { AboutCont, IntroText, HeadingCont, IntroPar, ButtonCont } from "./style";
 import Button from "../Button";
-import {AiFillLinkedin} from 'react-icons/ai';
+import { ButtonData } from "../../data/data";
 import {useTheme} from '../../utils/provider'
 import { About_Intro_theme } from "../../utils/variables";
 
 const AboutIntro = ({
     introText="Hey, my name is",
     name="Nicholas Barr",
-    phrase="I build things for the web",
-    introPar="I’m a Front-End developer specializing in extraordinary digital experiences. Second to being a developer I also sometimes create graphics and visuals."
+    phrase="Get to know me",
+    introPar="I am a Front-End Developer with a focus on crafting exceptional digital experiences. Beyond development, I also dabble in creating striking graphics and visuals, blending technical proficiency with aesthetic intuition to bring ideas to life."
 }) => {
     const {theme} = useTheme();
+    var buttonData=ButtonData
     return <AboutCont>
         <IntroText  color={About_Intro_theme[theme].heading1Col} >{introText}</IntroText>
         <HeadingCont color={About_Intro_theme[theme].heading2Col}>{name}</HeadingCont>
         <HeadingCont color={About_Intro_theme[theme].heading3Col}>{phrase}</HeadingCont>
         <IntroPar color={About_Intro_theme[theme].parCol}>{introPar}</IntroPar>
-        <Button label="LinkedIn" icon={<AiFillLinkedin />} onButClick={()=>router.push("https://www.linkedin.com/in/nicholas-barr-689765227/")}/>
+        <ButtonCont>
+                    {buttonData.map((o,i)=>{
+                    return <Button
+                    key={i}
+                    icon={o.icon}
+                    onButClick={()=>{window.open(`${o.route}`, '_blank')}}
+                    />
+                    })}     
+        </ButtonCont>  
     </AboutCont>
 }
 

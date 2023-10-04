@@ -8,6 +8,7 @@ padding:1em;
 justify-content:space-evenly;
 width:80vw;
 height:100%;
+margin:15em 0 0 0;
 @media only screen and (max-width: 500px) {
     width:90vw;
     }
@@ -33,4 +34,12 @@ margin-bottom:3em;
 @media only screen and (max-width: 500px) {
     font-size:3vw;
     }
+`;
+
+
+export const ButtonCont = styled.div`
+display:flex;
+width:100%;
+padding:1em 0 0em 0;
+justify-content:flex-start;
 `;
