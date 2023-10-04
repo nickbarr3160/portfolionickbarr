@@ -1,4 +1,3 @@
-
 export const getParticlesOptions = (theme, global_theme) => ({
     background: {
       color: {
