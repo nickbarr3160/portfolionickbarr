@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {createGlobalStyle} from "styled-components";
 
 
 
@@ -32,6 +32,10 @@ import styled from "styled-components";
     flex-direction:column;
     width:100%;
     align-items:center;
+    ::selection {
+        background-color: #21aab5; 
+        color: #000; 
+    }
     `;
     
     export const ProjCardCont = styled.div`
@@ -80,6 +84,18 @@ import styled from "styled-components";
         flex-direction:column;
         height:50vh
         } 
+    `;
+
+    export const GlobalStyle = createGlobalStyle`
+    ::selection {
+        background-color: ${props => props.bg}; 
+        color: ${props => props.color};
+    }
+    
+    ::-moz-selection {
+        background-color: ${props => props.bg}; 
+        color: ${props => props.color};
+    }
     `;
 
    
