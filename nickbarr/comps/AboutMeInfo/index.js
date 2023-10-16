@@ -35,7 +35,7 @@ const AboutMe = ({
             <Scene
                 duration={'70%'}
                 triggerElement=".trigger" 
-                triggerHook={isImageLoaded === true ? 0.9 : null}
+                triggerHook={isImageLoaded === true ? 0.9 : -100}
                 // indicators={true}
                 enabled={isInitialAnimationCompleted}
             >
